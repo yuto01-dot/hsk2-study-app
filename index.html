@@ -1,0 +1,1003 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover">
+<title>HSK2 集中学習</title>
+
+<!-- PWA / iOS ホーム画面対応 -->
+<meta name="theme-color" content="#2C3E66">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="HSK2">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-192.png">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
+
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #EDEFF2;
+  }
+  :root {
+    --paper: #EDEFF2;
+    --paper-raised: #FFFFFF;
+    --ink: #1B1F2A;
+    --ink-soft: #5B6472;
+    --indigo: #2C3E66;
+    --indigo-soft: #DDE3EE;
+    --stamp: #C1432E;
+    --stamp-soft: #F6DCD6;
+    --jade: #3F7A5E;
+    --jade-soft: #DCEBE2;
+    --gold: #B8863C;
+  }
+
+  * { box-sizing: border-box; }
+
+  .hsk-app {
+    font-family: "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif;
+    color: var(--ink);
+    background: var(--paper);
+    min-height: 100vh;
+    padding: 20px 16px 32px;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+
+  .hsk-app h1, .hsk-app h2, .hsk-app h3 {
+    font-family: "Hiragino Mincho ProN", "Noto Serif JP", "Yu Mincho", serif;
+    margin: 0;
+  }
+
+  /* ---------- header ---------- */
+  .top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  .brand {
+    display: flex;
+    align-items: baseline;
+    gap: 8px;
+  }
+  .brand .mark {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--indigo);
+    letter-spacing: 1px;
+  }
+  .brand .sub {
+    font-size: 12px;
+    color: var(--ink-soft);
+  }
+  .streak-pill {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--paper-raised);
+    border: 1px solid var(--indigo-soft);
+    border-radius: 999px;
+    padding: 6px 12px;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--indigo);
+  }
+  .save-status {
+    font-size: 11px;
+    text-align: center;
+    padding: 6px;
+    border-radius: 8px;
+    margin-bottom: 14px;
+  }
+  .save-status.ok { color: var(--jade); background: var(--jade-soft); }
+  .save-status.err { color: var(--stamp); background: var(--stamp-soft); }
+  .save-status.pending { color: var(--ink-soft); background: var(--indigo-soft); }
+
+  /* ---------- backup panel ---------- */
+  .backup-panel {
+    background: var(--paper-raised);
+    border-radius: 16px;
+    padding: 16px;
+    margin-bottom: 22px;
+  }
+  .backup-panel .bp-title {
+    font-size: 13px; font-weight: 700; margin-bottom: 4px;
+  }
+  .backup-panel .bp-desc {
+    font-size: 11px; color: var(--ink-soft); margin-bottom: 10px; line-height: 1.5;
+  }
+  .backup-panel textarea {
+    width: 100%;
+    font-size: 11px;
+    font-family: monospace;
+    border: 1px solid var(--indigo-soft);
+    border-radius: 8px;
+    padding: 8px;
+    resize: none;
+    color: var(--ink-soft);
+    background: var(--paper);
+  }
+  .bp-row { display: flex; gap: 8px; margin-top: 8px; }
+  .bp-btn {
+    flex: 1;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  .bp-btn.copy { background: var(--indigo); color: white; }
+  .bp-btn.restore { background: var(--jade-soft); color: var(--jade); }
+  .bp-toggle {
+    background: none; border: none; color: var(--indigo); font-size: 12px; font-weight: 700; cursor: pointer; padding: 0;
+  }
+
+  /* ---------- progress bar ---------- */
+  .progress-track {
+    height: 8px;
+    background: var(--indigo-soft);
+    border-radius: 999px;
+    overflow: hidden;
+    margin-bottom: 4px;
+  }
+  .progress-fill {
+    height: 100%;
+    background: var(--indigo);
+    border-radius: 999px;
+    transition: width 0.5s ease;
+  }
+  .progress-label {
+    font-size: 12px;
+    color: var(--ink-soft);
+    margin-bottom: 22px;
+  }
+
+  /* ---------- home ---------- */
+  .section-title {
+    font-size: 15px;
+    color: var(--ink-soft);
+    margin: 0 0 10px 2px;
+  }
+  .mode-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 26px;
+  }
+  .mode-card {
+    background: var(--paper-raised);
+    border-radius: 18px;
+    padding: 18px 14px;
+    text-align: left;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(27,31,42,0.06);
+  }
+  .mode-card .icon { font-size: 26px; display: block; margin-bottom: 10px; }
+  .mode-card .title { font-size: 16px; font-weight: 700; color: var(--ink); }
+  .mode-card .desc { font-size: 12px; color: var(--ink-soft); margin-top: 4px; line-height: 1.5; }
+
+  .cat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 10px;
+  }
+  .cat-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: var(--paper-raised);
+    border: 2px solid transparent;
+    border-radius: 14px;
+    padding: 12px 16px;
+    cursor: pointer;
+    transition: border-color 0.15s ease;
+  }
+  .cat-row.active { border-color: var(--indigo); }
+  .cat-row .name { font-weight: 600; font-size: 14px; }
+  .cat-row .count { font-size: 12px; color: var(--ink-soft); }
+  .cat-row .mini-progress {
+    width: 60px; height: 5px; background: var(--indigo-soft); border-radius: 999px; overflow: hidden; margin-top: 6px;
+  }
+  .cat-row .mini-progress > div { height: 100%; background: var(--jade); }
+
+  .start-btn {
+    width: 100%;
+    background: var(--indigo);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 16px;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 8px;
+  }
+  .start-btn:disabled { opacity: 0.4; cursor: default; }
+
+  /* ---------- flashcard ---------- */
+  .study-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 18px;
+  }
+  .back-link {
+    background: none; border: none; color: var(--ink-soft); font-size: 14px; cursor: pointer; padding: 4px;
+  }
+  .deck-pos { font-size: 13px; color: var(--ink-soft); font-weight: 600; }
+
+  .flashcard-wrap {
+    perspective: 1200px;
+    margin-bottom: 20px;
+  }
+  .flashcard {
+    position: relative;
+    height: 260px;
+    border-radius: 22px;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: transform 0.45s cubic-bezier(.2,.9,.3,1);
+  }
+  .flashcard.flipped { transform: rotateY(180deg); }
+  .face {
+    position: absolute;
+    inset: 0;
+    border-radius: 22px;
+    backface-visibility: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 24px;
+    text-align: center;
+  }
+  .face.front {
+    background: var(--paper-raised);
+    box-shadow: 0 4px 18px rgba(27,31,42,0.08);
+  }
+  .face.back {
+    background: var(--indigo);
+    color: white;
+    transform: rotateY(180deg);
+  }
+  .hanzi { font-size: 56px; font-weight: 700; font-family: "Hiragino Mincho ProN","Noto Serif JP",serif; }
+  .pinyin { font-size: 18px; color: var(--ink-soft); margin-top: 10px; }
+  .tap-hint { font-size: 11px; color: var(--ink-soft); position: absolute; bottom: 14px; }
+  .meaning { font-size: 24px; font-weight: 700; }
+  .category-tag {
+    font-size: 11px;
+    color: rgba(255,255,255,0.75);
+    margin-top: 8px;
+  }
+
+  .rate-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .rate-btn {
+    border: none;
+    border-radius: 14px;
+    padding: 16px 8px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+  }
+  .rate-btn.again { background: var(--stamp-soft); color: var(--stamp); }
+  .rate-btn.got-it { background: var(--jade-soft); color: var(--jade); }
+
+  /* ---------- quiz ---------- */
+  .quiz-progress-row {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 18px;
+  }
+  .quiz-progress-row .progress-track { flex: 1; margin-bottom: 0; }
+  .score-badge { font-size: 13px; font-weight: 700; color: var(--jade); white-space: nowrap; }
+
+  .quiz-question {
+    background: var(--paper-raised);
+    border-radius: 20px;
+    padding: 30px 20px;
+    text-align: center;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 18px rgba(27,31,42,0.06);
+  }
+  .quiz-question .hanzi { font-size: 44px; }
+  .quiz-question .pinyin { margin-top: 8px; }
+  .quiz-prompt { font-size: 12px; color: var(--ink-soft); margin-top: 14px; }
+
+  .option-list { display: flex; flex-direction: column; gap: 10px; }
+  .option-btn {
+    background: var(--paper-raised);
+    border: 2px solid var(--indigo-soft);
+    border-radius: 14px;
+    padding: 14px 16px;
+    font-size: 15px;
+    text-align: left;
+    cursor: pointer;
+    color: var(--ink);
+  }
+  .option-btn.correct { border-color: var(--jade); background: var(--jade-soft); color: var(--jade); }
+  .option-btn.wrong { border-color: var(--stamp); background: var(--stamp-soft); color: var(--stamp); }
+  .option-btn:disabled { cursor: default; }
+
+  .next-btn {
+    width: 100%;
+    background: var(--indigo);
+    color: white;
+    border: none;
+    border-radius: 14px;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    margin-top: 14px;
+  }
+
+  /* ---------- results ---------- */
+  .result-wrap { text-align: center; padding: 30px 10px; }
+  .result-wrap .big-emoji { font-size: 48px; }
+  .result-wrap .result-msg { font-size: 18px; font-weight: 700; margin: 14px 0 4px; }
+  .result-wrap .result-sub { font-size: 13px; color: var(--ink-soft); margin-bottom: 22px; }
+  .result-stats { display: flex; justify-content: center; gap: 24px; margin-bottom: 26px; }
+  .result-stats .stat-num { font-size: 24px; font-weight: 700; color: var(--indigo); }
+  .result-stats .stat-label { font-size: 11px; color: var(--ink-soft); }
+
+  .toast {
+    position: fixed;
+    bottom: 24px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: var(--ink);
+    color: white;
+    padding: 10px 18px;
+    border-radius: 999px;
+    font-size: 13px;
+    font-weight: 600;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    z-index: 50;
+  }
+  .toast.show { opacity: 1; transform: translateX(-50%) translateY(-6px); }
+</style>
+</head>
+<body>
+<div id="hsk-root" class="hsk-app"></div>
+
+<script>
+(function(){
+
+  // ---------------------------------------------------------------
+  // データ：HSK2級 優先語彙
+  // ---------------------------------------------------------------
+  const VOCAB = [
+    // 動詞
+    {h:"爱",p:"ài",m:"愛する",c:"動詞"},
+    {h:"帮助",p:"bāngzhù",m:"手伝う",c:"動詞"},
+    {h:"穿",p:"chuān",m:"着る",c:"動詞"},
+    {h:"打电话",p:"dǎ diànhuà",m:"電話をかける",c:"動詞"},
+    {h:"到",p:"dào",m:"着く",c:"動詞"},
+    {h:"懂",p:"dǒng",m:"わかる",c:"動詞"},
+    {h:"进",p:"jìn",m:"入る",c:"動詞"},
+    {h:"觉得",p:"juéde",m:"〜と思う",c:"動詞"},
+    {h:"离开",p:"líkāi",m:"離れる",c:"動詞"},
+    {h:"跑",p:"pǎo",m:"走る",c:"動詞"},
+    {h:"认识",p:"rènshi",m:"知り合う",c:"動詞"},
+    {h:"生病",p:"shēngbìng",m:"病気になる",c:"動詞"},
+    {h:"送",p:"sòng",m:"送る・贈る",c:"動詞"},
+    {h:"玩",p:"wán",m:"遊ぶ",c:"動詞"},
+    {h:"希望",p:"xīwàng",m:"希望する",c:"動詞"},
+    {h:"笑",p:"xiào",m:"笑う",c:"動詞"},
+    {h:"游泳",p:"yóuyǒng",m:"泳ぐ",c:"動詞"},
+    {h:"准备",p:"zhǔnbèi",m:"準備する",c:"動詞"},
+    {h:"找",p:"zhǎo",m:"探す",c:"動詞"},
+    {h:"知道",p:"zhīdào",m:"知っている",c:"動詞"},
+    {h:"住",p:"zhù",m:"住む",c:"動詞"},
+    {h:"开始",p:"kāishǐ",m:"始まる",c:"動詞"},
+    {h:"结束",p:"jiéshù",m:"終わる",c:"動詞"},
+    {h:"告诉",p:"gàosù",m:"告げる",c:"動詞"},
+    {h:"介绍",p:"jièshào",m:"紹介する",c:"動詞"},
+    {h:"需要",p:"xūyào",m:"必要とする",c:"動詞"},
+    {h:"喜欢",p:"xǐhuan",m:"好きだ",c:"動詞"},
+    {h:"休息",p:"xiūxi",m:"休む",c:"動詞"},
+    {h:"上班",p:"shàngbān",m:"出勤する",c:"動詞"},
+    {h:"下班",p:"xiàbān",m:"退勤する",c:"動詞"},
+    {h:"运动",p:"yùndòng",m:"運動する",c:"動詞"},
+    {h:"检查",p:"jiǎnchá",m:"検査する",c:"動詞"},
+    {h:"发现",p:"fāxiàn",m:"発見する",c:"動詞"},
+    {h:"决定",p:"juédìng",m:"決定する",c:"動詞"},
+    {h:"复习",p:"fùxí",m:"復習する",c:"動詞"},
+
+    // 名詞
+    {h:"时间",p:"shíjiān",m:"時間",c:"名詞"},
+    {h:"上午",p:"shàngwǔ",m:"午前",c:"名詞"},
+    {h:"中午",p:"zhōngwǔ",m:"正午",c:"名詞"},
+    {h:"下午",p:"xiàwǔ",m:"午後",c:"名詞"},
+    {h:"晚上",p:"wǎnshàng",m:"夜",c:"名詞"},
+    {h:"星期",p:"xīngqī",m:"曜日・週",c:"名詞"},
+    {h:"分钟",p:"fēnzhōng",m:"〜分間",c:"名詞"},
+    {h:"小时",p:"xiǎoshí",m:"〜時間",c:"名詞"},
+    {h:"周末",p:"zhōumò",m:"週末",c:"名詞"},
+    {h:"房间",p:"fángjiān",m:"部屋",c:"名詞"},
+    {h:"桌子",p:"zhuōzi",m:"机",c:"名詞"},
+    {h:"椅子",p:"yǐzi",m:"椅子",c:"名詞"},
+    {h:"电脑",p:"diànnǎo",m:"パソコン",c:"名詞"},
+    {h:"手机",p:"shǒujī",m:"携帯電話",c:"名詞"},
+    {h:"报纸",p:"bàozhǐ",m:"新聞",c:"名詞"},
+    {h:"字典",p:"zìdiǎn",m:"辞書",c:"名詞"},
+    {h:"地方",p:"dìfang",m:"場所",c:"名詞"},
+    {h:"飞机",p:"fēijī",m:"飛行機",c:"名詞"},
+    {h:"出租车",p:"chūzūchē",m:"タクシー",c:"名詞"},
+    {h:"火车",p:"huǒchē",m:"電車・汽車",c:"名詞"},
+    {h:"自行车",p:"zìxíngchē",m:"自転車",c:"名詞"},
+    {h:"公共汽车",p:"gōnggòngqìchē",m:"バス",c:"名詞"},
+    {h:"地铁",p:"dìtiě",m:"地下鉄",c:"名詞"},
+    {h:"机场",p:"jīchǎng",m:"空港",c:"名詞"},
+    {h:"车站",p:"chēzhàn",m:"駅",c:"名詞"},
+    {h:"宾馆",p:"bīnguǎn",m:"ホテル",c:"名詞"},
+    {h:"商店",p:"shāngdiàn",m:"店",c:"名詞"},
+    {h:"医院",p:"yīyuàn",m:"病院",c:"名詞"},
+    {h:"公司",p:"gōngsī",m:"会社",c:"名詞"},
+    {h:"银行",p:"yínháng",m:"銀行",c:"名詞"},
+    {h:"超市",p:"chāoshì",m:"スーパー",c:"名詞"},
+    {h:"公园",p:"gōngyuán",m:"公園",c:"名詞"},
+    {h:"图书馆",p:"túshūguǎn",m:"図書館",c:"名詞"},
+    {h:"天气",p:"tiānqì",m:"天気",c:"名詞"},
+    {h:"太阳",p:"tàiyáng",m:"太陽",c:"名詞"},
+    {h:"左边",p:"zuǒbian",m:"左側",c:"名詞"},
+    {h:"右边",p:"yòubian",m:"右側",c:"名詞"},
+    {h:"前面",p:"qiánmiàn",m:"前",c:"名詞"},
+    {h:"后面",p:"hòumiàn",m:"後ろ",c:"名詞"},
+    {h:"里面",p:"lǐmiàn",m:"中",c:"名詞"},
+    {h:"附近",p:"fùjìn",m:"付近",c:"名詞"},
+    {h:"身体",p:"shēntǐ",m:"体",c:"名詞"},
+    {h:"老师",p:"lǎoshī",m:"先生",c:"名詞"},
+    {h:"医生",p:"yīshēng",m:"医者",c:"名詞"},
+    {h:"司机",p:"sījī",m:"運転手",c:"名詞"},
+    {h:"服务员",p:"fúwùyuán",m:"店員",c:"名詞"},
+    {h:"儿子",p:"érzi",m:"息子",c:"名詞"},
+    {h:"女儿",p:"nǚ'ér",m:"娘",c:"名詞"},
+    {h:"丈夫",p:"zhàngfu",m:"夫",c:"名詞"},
+    {h:"妻子",p:"qīzi",m:"妻",c:"名詞"},
+    {h:"同事",p:"tóngshì",m:"同僚",c:"名詞"},
+
+    // 形容詞
+    {h:"新",p:"xīn",m:"新しい",c:"形容詞"},
+    {h:"旧",p:"jiù",m:"古い",c:"形容詞"},
+    {h:"长",p:"cháng",m:"長い",c:"形容詞"},
+    {h:"短",p:"duǎn",m:"短い",c:"形容詞"},
+    {h:"矮",p:"ǎi",m:"低い（背）",c:"形容詞"},
+    {h:"胖",p:"pàng",m:"太っている",c:"形容詞"},
+    {h:"瘦",p:"shòu",m:"痩せている",c:"形容詞"},
+    {h:"贵",p:"guì",m:"高い（値段）",c:"形容詞"},
+    {h:"便宜",p:"piányi",m:"安い",c:"形容詞"},
+    {h:"干净",p:"gānjìng",m:"清潔だ",c:"形容詞"},
+    {h:"脏",p:"zāng",m:"汚い",c:"形容詞"},
+    {h:"漂亮",p:"piàoliang",m:"美しい",c:"形容詞"},
+    {h:"可爱",p:"kě'ài",m:"かわいい",c:"形容詞"},
+    {h:"聪明",p:"cōngming",m:"賢い",c:"形容詞"},
+    {h:"简单",p:"jiǎndān",m:"簡単だ",c:"形容詞"},
+    {h:"容易",p:"róngyì",m:"易しい",c:"形容詞"},
+    {h:"难",p:"nán",m:"難しい",c:"形容詞"},
+    {h:"快",p:"kuài",m:"速い",c:"形容詞"},
+    {h:"慢",p:"màn",m:"遅い",c:"形容詞"},
+    {h:"忙",p:"máng",m:"忙しい",c:"形容詞"},
+    {h:"累",p:"lèi",m:"疲れている",c:"形容詞"},
+    {h:"饿",p:"è",m:"空腹だ",c:"形容詞"},
+    {h:"渴",p:"kě",m:"喉が渇いた",c:"形容詞"},
+    {h:"快乐",p:"kuàilè",m:"楽しい",c:"形容詞"},
+    {h:"难过",p:"nánguò",m:"悲しい",c:"形容詞"},
+    {h:"生气",p:"shēngqì",m:"怒る",c:"形容詞"},
+    {h:"害怕",p:"hàipà",m:"怖がる",c:"形容詞"},
+    {h:"着急",p:"zháojí",m:"焦る",c:"形容詞"},
+    {h:"奇怪",p:"qíguài",m:"奇妙だ",c:"形容詞"},
+    {h:"安静",p:"ānjìng",m:"静かだ",c:"形容詞"},
+    {h:"认真",p:"rènzhēn",m:"真面目だ",c:"形容詞"},
+
+    // 副詞・接続詞
+    {h:"也",p:"yě",m:"〜も",c:"副詞・接続詞"},
+    {h:"都",p:"dōu",m:"みんな・すべて",c:"副詞・接続詞"},
+    {h:"还",p:"hái",m:"まだ・さらに",c:"副詞・接続詞"},
+    {h:"就",p:"jiù",m:"すぐに",c:"副詞・接続詞"},
+    {h:"才",p:"cái",m:"やっと",c:"副詞・接続詞"},
+    {h:"再",p:"zài",m:"再び",c:"副詞・接続詞"},
+    {h:"又",p:"yòu",m:"また",c:"副詞・接続詞"},
+    {h:"一直",p:"yìzhí",m:"ずっと",c:"副詞・接続詞"},
+    {h:"一定",p:"yídìng",m:"必ず",c:"副詞・接続詞"},
+    {h:"非常",p:"fēicháng",m:"非常に",c:"副詞・接続詞"},
+    {h:"更",p:"gèng",m:"さらに",c:"副詞・接続詞"},
+    {h:"最",p:"zuì",m:"最も",c:"副詞・接続詞"},
+    {h:"别",p:"bié",m:"〜するな",c:"副詞・接続詞"},
+    {h:"但是",p:"dànshì",m:"しかし",c:"副詞・接続詞"},
+    {h:"因为",p:"yīnwèi",m:"なぜなら",c:"副詞・接続詞"},
+    {h:"所以",p:"suǒyǐ",m:"だから",c:"副詞・接続詞"},
+    {h:"如果",p:"rúguǒ",m:"もし",c:"副詞・接続詞"},
+    {h:"虽然",p:"suīrán",m:"〜だけれども",c:"副詞・接続詞"},
+    {h:"然后",p:"ránhòu",m:"それから",c:"副詞・接続詞"},
+    {h:"可能",p:"kěnéng",m:"かもしれない",c:"副詞・接続詞"},
+    {h:"突然",p:"tūrán",m:"突然",c:"副詞・接続詞"},
+    {h:"马上",p:"mǎshàng",m:"すぐに",c:"副詞・接続詞"},
+    {h:"经常",p:"jīngcháng",m:"よく・しばしば",c:"副詞・接続詞"},
+    {h:"有时候",p:"yǒushíhou",m:"時々",c:"副詞・接続詞"},
+    {h:"或者",p:"huòzhě",m:"あるいは",c:"副詞・接続詞"},
+
+    // 頻出フレーズ
+    {h:"没关系",p:"méi guānxi",m:"大丈夫、気にしない",c:"頻出フレーズ"},
+    {h:"不客气",p:"bú kèqi",m:"どういたしまして",c:"頻出フレーズ"},
+    {h:"对不起",p:"duìbuqǐ",m:"ごめんなさい",c:"頻出フレーズ"},
+    {h:"请问",p:"qǐngwèn",m:"お尋ねしますが",c:"頻出フレーズ"},
+    {h:"麻烦你",p:"máfan nǐ",m:"お手数ですが",c:"頻出フレーズ"},
+    {h:"多少钱",p:"duōshao qián",m:"いくらですか",c:"頻出フレーズ"},
+    {h:"几点了",p:"jǐ diǎn le",m:"何時ですか",c:"頻出フレーズ"},
+  ];
+
+  const CATEGORIES = ["すべて", "動詞", "名詞", "形容詞", "副詞・接続詞", "頻出フレーズ"];
+
+  // ---------------------------------------------------------------
+  // 状態管理
+  // ---------------------------------------------------------------
+  let state = {
+    screen: "home",       // home | flashcard | quiz | quizResult
+    category: "すべて",
+    deck: [],
+    idx: 0,
+    flipped: false,
+    known: {},            // { hanzi: true }
+    xp: 0,
+    streak: 0,
+    quiz: { questions: [], idx: 0, score: 0, answered: false, selected: null },
+    loaded: false,
+    saveStatus: "idle",   // idle | ok | err
+    saveError: "",
+    backupOpen: false,
+    restoreText: "",
+  };
+
+  // ---------------------------------------------------------------
+  // 手動バックアップ（コード方式）
+  // ---------------------------------------------------------------
+  function exportCode() {
+    const payload = { known: state.known, xp: state.xp, streak: state.streak, lastDate: state._lastDate };
+    try {
+      return btoa(unescape(encodeURIComponent(JSON.stringify(payload))));
+    } catch (e) {
+      return "";
+    }
+  }
+
+  function importCode(code) {
+    try {
+      const json = decodeURIComponent(escape(atob(code.trim())));
+      const data = JSON.parse(json);
+      state.known = data.known || {};
+      state.xp = data.xp || 0;
+      state.streak = data.streak || 0;
+      state._lastDate = data.lastDate;
+      saveProgress();
+      showToast("復元しました ✓");
+      render();
+    } catch (e) {
+      showToast("コードが正しくありません");
+    }
+  }
+
+  function todayStr() {
+    const d = new Date();
+    return d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate();
+  }
+
+  function loadProgress() {
+    try {
+      const raw = localStorage.getItem("hsk2-progress");
+      if (raw) {
+        const data = JSON.parse(raw);
+        state.known = data.known || {};
+        state.xp = data.xp || 0;
+        state.streak = data.streak || 0;
+        state._lastDate = data.lastDate;
+      }
+      state.saveStatus = "ok";
+    } catch (e) {
+      state.saveStatus = "err";
+      state.saveError = "この端末では保存機能が使えません（プライベートブラウズ中など）";
+    }
+    state.loaded = true;
+    render();
+  }
+
+  function saveProgress() {
+    try {
+      const today = todayStr();
+      if (state._lastDate !== today) {
+        state.streak = state._lastDate ? state.streak + 1 : 1;
+        state._lastDate = today;
+      }
+      localStorage.setItem("hsk2-progress", JSON.stringify({
+        known: state.known, xp: state.xp, streak: state.streak, lastDate: state._lastDate
+      }));
+      state.saveStatus = "ok";
+    } catch (e) {
+      state.saveStatus = "err";
+      state.saveError = "保存に失敗しました: " + ((e && (e.message || String(e))) || "不明なエラー");
+    }
+    render();
+  }
+
+  function showToast(msg) {
+    const t = document.getElementById("hsk-toast");
+    if (!t) return;
+    t.textContent = msg;
+    t.classList.add("show");
+    setTimeout(() => t.classList.remove("show"), 1400);
+  }
+
+  function shuffle(arr) {
+    const a = arr.slice();
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  function getFilteredVocab() {
+    if (state.category === "すべて") return VOCAB;
+    return VOCAB.filter(v => v.c === state.category);
+  }
+
+  function categoryProgress(cat) {
+    const items = cat === "すべて" ? VOCAB : VOCAB.filter(v => v.c === cat);
+    const knownCount = items.filter(v => state.known[v.h]).length;
+    return { total: items.length, known: knownCount };
+  }
+
+  // ---------------------------------------------------------------
+  // アクション
+  // ---------------------------------------------------------------
+  function startFlashcards() {
+    state.deck = shuffle(getFilteredVocab());
+    state.idx = 0;
+    state.flipped = false;
+    state.screen = "flashcard";
+    render();
+  }
+
+  function startQuiz() {
+    const pool = getFilteredVocab();
+    if (pool.length < 4) { showToast("このカテゴリはクイズには少なすぎます"); return; }
+    const qCount = Math.min(10, pool.length);
+    const chosen = shuffle(pool).slice(0, qCount);
+    const questions = chosen.map(q => {
+      const distractors = shuffle(pool.filter(v => v.h !== q.h)).slice(0, 3);
+      const options = shuffle([q, ...distractors]);
+      return { q, options };
+    });
+    state.quiz = { questions, idx: 0, score: 0, answered: false, selected: null };
+    state.screen = "quiz";
+    render();
+  }
+
+  function flipCard() {
+    state.flipped = !state.flipped;
+    render();
+  }
+
+  function rateCard(gotIt) {
+    const card = state.deck[state.idx];
+    if (gotIt) {
+      if (!state.known[card.h]) { state.xp += 10; }
+      state.known[card.h] = true;
+      showToast("+10 XP ✨");
+    } else {
+      delete state.known[card.h];
+    }
+    saveProgress();
+    if (state.idx + 1 < state.deck.length) {
+      state.idx += 1;
+      state.flipped = false;
+      render();
+    } else {
+      state.screen = "home";
+      render();
+      showToast("このセットを終えました！お疲れ様でした 🎉");
+    }
+  }
+
+  function answerQuiz(opt) {
+    if (state.quiz.answered) return;
+    state.quiz.answered = true;
+    state.quiz.selected = opt.h;
+    const correct = opt.h === state.quiz.questions[state.quiz.idx].q.h;
+    if (correct) {
+      state.quiz.score += 1;
+      state.xp += 15;
+      if (!state.known[opt.h]) state.known[opt.h] = true;
+    }
+    saveProgress();
+    render();
+  }
+
+  function nextQuizQuestion() {
+    if (state.quiz.idx + 1 < state.quiz.questions.length) {
+      state.quiz.idx += 1;
+      state.quiz.answered = false;
+      state.quiz.selected = null;
+      render();
+    } else {
+      state.screen = "quizResult";
+      render();
+    }
+  }
+
+  function goHome() {
+    state.screen = "home";
+    render();
+  }
+
+  function selectCategory(cat) {
+    state.category = cat;
+    render();
+  }
+
+  // ---------------------------------------------------------------
+  // レンダリング
+  // ---------------------------------------------------------------
+  function el(html) {
+    const div = document.createElement("div");
+    div.innerHTML = html;
+    return div.firstElementChild;
+  }
+
+  function renderHome() {
+    const totalProg = categoryProgress("すべて");
+    const pct = Math.round((totalProg.known / totalProg.total) * 100);
+
+    const catRows = CATEGORIES.map(cat => {
+      const prog = categoryProgress(cat);
+      const cpct = prog.total ? Math.round((prog.known/prog.total)*100) : 0;
+      return `
+        <div class="cat-row ${state.category===cat?'active':''}" data-cat="${cat}">
+          <div>
+            <div class="name">${cat}</div>
+            <div class="mini-progress"><div style="width:${cpct}%"></div></div>
+          </div>
+          <div class="count">${prog.known}/${prog.total}</div>
+        </div>`;
+    }).join("");
+
+    const wrap = el(`
+      <div>
+        <div class="top-bar">
+          <div class="brand">
+            <span class="mark">汉语</span>
+            <span class="sub">HSK2 集中学習</span>
+          </div>
+          <div class="streak-pill">🔥 ${state.streak}日</div>
+        </div>
+
+        ${state.saveStatus === "err" ? `<div class="save-status err">⚠️ 自動保存は使えません。下の「進捗コード」で手動バックアップしてください</div>` : ""}
+        ${state.saveStatus === "ok" ? `<div class="save-status ok">✓ この端末に保存されています</div>` : ""}
+
+        <div class="backup-panel">
+          <div class="bp-title">📋 進捗コード（手動バックアップ）</div>
+          <div class="bp-desc">機種変更や別ブラウザに移るときはこちらを使ってください。学習後に「コードをコピー」→メモ帳などに貼り付けて保管。次回開いたら「コードから復元」に貼り付けて読み込むと続きから再開できます。</div>
+          ${state.backupOpen ? `
+            <textarea readonly rows="3" id="export-area">${exportCode()}</textarea>
+            <div class="bp-row">
+              <button class="bp-btn copy" id="copy-btn">コードをコピー</button>
+            </div>
+            <textarea rows="3" placeholder="ここに以前のコードを貼り付け" id="import-area" style="margin-top:10px;"></textarea>
+            <div class="bp-row">
+              <button class="bp-btn restore" id="restore-btn">コードから復元</button>
+            </div>
+            <div class="bp-row">
+              <button class="bp-toggle" id="close-backup">閉じる</button>
+            </div>
+          ` : `<button class="bp-toggle" id="open-backup">コードを表示 / 復元する</button>`}
+        </div>
+
+        <div class="progress-fill-wrap">
+          <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
+          <div class="progress-label">全体の習得率 ${pct}%（${totalProg.known}/${totalProg.total}語） ・ XP ${state.xp}</div>
+        </div>
+
+        <div class="section-title">学習モードを選ぶ</div>
+        <div class="mode-grid">
+          <button class="mode-card" id="mode-flash">
+            <span class="icon">🎴</span>
+            <div class="title">フラッシュカード</div>
+            <div class="desc">タップしてめくる。覚えた語彙を積み上げる</div>
+          </button>
+          <button class="mode-card" id="mode-quiz">
+            <span class="icon">⚡</span>
+            <div class="title">クイズ</div>
+            <div class="desc">4択に答えてXPを稼ぐ。テンポよく実力チェック</div>
+          </button>
+        </div>
+
+        <div class="section-title">カテゴリを選ぶ</div>
+        <div class="cat-list">${catRows}</div>
+      </div>
+    `);
+
+    wrap.querySelectorAll(".cat-row").forEach(row => {
+      row.addEventListener("click", () => selectCategory(row.dataset.cat));
+    });
+    wrap.querySelector("#mode-flash").addEventListener("click", startFlashcards);
+    wrap.querySelector("#mode-quiz").addEventListener("click", startQuiz);
+
+    const openBtn = wrap.querySelector("#open-backup");
+    if (openBtn) openBtn.addEventListener("click", () => { state.backupOpen = true; render(); });
+    const closeBtn = wrap.querySelector("#close-backup");
+    if (closeBtn) closeBtn.addEventListener("click", () => { state.backupOpen = false; render(); });
+    const copyBtn = wrap.querySelector("#copy-btn");
+    if (copyBtn) copyBtn.addEventListener("click", async () => {
+      const text = wrap.querySelector("#export-area").value;
+      try {
+        await navigator.clipboard.writeText(text);
+        showToast("コピーしました ✓");
+      } catch (e) {
+        const area = wrap.querySelector("#export-area");
+        area.select();
+        showToast("手動で選択してコピーしてください");
+      }
+    });
+    const restoreBtn = wrap.querySelector("#restore-btn");
+    if (restoreBtn) restoreBtn.addEventListener("click", () => {
+      const text = wrap.querySelector("#import-area").value;
+      if (text.trim()) importCode(text);
+      else showToast("コードを貼り付けてください");
+    });
+    return wrap;
+  }
+
+  function renderFlashcard() {
+    const card = state.deck[state.idx];
+    const wrap = el(`
+      <div>
+        <div class="study-header">
+          <button class="back-link" id="back">← 戻る</button>
+          <div class="deck-pos">${state.idx+1} / ${state.deck.length}</div>
+        </div>
+        <div class="progress-track" style="margin-bottom:20px;">
+          <div class="progress-fill" style="width:${((state.idx)/state.deck.length)*100}%"></div>
+        </div>
+        <div class="flashcard-wrap">
+          <div class="flashcard ${state.flipped?'flipped':''}" id="card">
+            <div class="face front">
+              <div class="hanzi">${card.h}</div>
+              <div class="pinyin">${card.p}</div>
+              <div class="tap-hint">タップして意味を見る</div>
+            </div>
+            <div class="face back">
+              <div class="meaning">${card.m}</div>
+              <div class="category-tag">${card.c}</div>
+            </div>
+          </div>
+        </div>
+        <div class="rate-row">
+          <button class="rate-btn again" id="again">もう一度</button>
+          <button class="rate-btn got-it" id="gotit">覚えた ✓</button>
+        </div>
+      </div>
+    `);
+    wrap.querySelector("#back").addEventListener("click", goHome);
+    wrap.querySelector("#card").addEventListener("click", flipCard);
+    wrap.querySelector("#again").addEventListener("click", (e) => { e.stopPropagation(); rateCard(false); });
+    wrap.querySelector("#gotit").addEventListener("click", (e) => { e.stopPropagation(); rateCard(true); });
+    return wrap;
+  }
+
+  function renderQuiz() {
+    const { questions, idx, score, answered, selected } = state.quiz;
+    const current = questions[idx];
+
+    const optionsHtml = current.options.map(opt => {
+      let cls = "option-btn";
+      if (answered) {
+        if (opt.h === current.q.h) cls += " correct";
+        else if (opt.h === selected) cls += " wrong";
+      }
+      return `<button class="${cls}" data-h="${opt.h}" ${answered?'disabled':''}>${opt.m}</button>`;
+    }).join("");
+
+    const wrap = el(`
+      <div>
+        <div class="study-header">
+          <button class="back-link" id="back">← 戻る</button>
+          <div class="deck-pos">${idx+1} / ${questions.length}</div>
+        </div>
+        <div class="quiz-progress-row">
+          <div class="progress-track"><div class="progress-fill" style="width:${(idx/questions.length)*100}%"></div></div>
+          <div class="score-badge">正解 ${score}</div>
+        </div>
+        <div class="quiz-question">
+          <div class="hanzi">${current.q.h}</div>
+          <div class="pinyin">${current.q.p}</div>
+          <div class="quiz-prompt">この意味はどれ？</div>
+        </div>
+        <div class="option-list">${optionsHtml}</div>
+        ${answered ? '<button class="next-btn" id="next">次へ</button>' : ''}
+      </div>
+    `);
+    wrap.querySelector("#back").addEventListener("click", goHome);
+    wrap.querySelectorAll(".option-btn").forEach(btn => {
+      btn.addEventListener("click", () => {
+        const opt = current.options.find(o => o.h === btn.dataset.h);
+        answerQuiz(opt);
+      });
+    });
+    if (answered) wrap.querySelector("#next").addEventListener("click", nextQuizQuestion);
+    return wrap;
+  }
+
+  function renderQuizResult() {
+    const { score, questions } = state.quiz;
+    const pct = Math.round((score/questions.length)*100);
+    let msg = "その調子！";
+    let emoji = "🙂";
+    if (pct === 100) { msg = "パーフェクト！！"; emoji = "🏆"; }
+    else if (pct >= 80) { msg = "とても良い出来です"; emoji = "🎉"; }
+    else if (pct >= 50) { msg = "順調に伸びています"; emoji = "💪"; }
+    else { msg = "もう一周してみましょう"; emoji = "📚"; }
+
+    const wrap = el(`
+      <div>
+        <div class="result-wrap">
+          <div class="big-emoji">${emoji}</div>
+          <div class="result-msg">${msg}</div>
+          <div class="result-sub">${questions.length}問中 ${score}問正解（正答率${pct}%）</div>
+          <div class="result-stats">
+            <div><div class="stat-num">+${score*15}</div><div class="stat-label">獲得XP</div></div>
+            <div><div class="stat-num">${state.xp}</div><div class="stat-label">総XP</div></div>
+          </div>
+          <button class="start-btn" id="retry">もう一度クイズ</button>
+          <button class="back-link" id="home2" style="margin-top:10px;">ホームに戻る</button>
+        </div>
+      </div>
+    `);
+    wrap.querySelector("#retry").addEventListener("click", startQuiz);
+    wrap.querySelector("#home2").addEventListener("click", goHome);
+    return wrap;
+  }
+
+  function render() {
+    const root = document.getElementById("hsk-root");
+    if (!state.loaded) {
+      root.innerHTML = '<div style="padding:60px 0;text-align:center;color:var(--ink-soft);">読み込み中...</div>';
+      return;
+    }
+    root.innerHTML = "";
+    let content;
+    if (state.screen === "home") content = renderHome();
+    else if (state.screen === "flashcard") content = renderFlashcard();
+    else if (state.screen === "quiz") content = renderQuiz();
+    else if (state.screen === "quizResult") content = renderQuizResult();
+    root.appendChild(content);
+
+    if (!document.getElementById("hsk-toast")) {
+      const toast = document.createElement("div");
+      toast.id = "hsk-toast";
+      toast.className = "toast";
+      document.body.appendChild(toast);
+    }
+  }
+
+  loadProgress();
+
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("service-worker.js").catch(() => {});
+    });
+  }
+})();
+</script>
+</body>
+</html>
