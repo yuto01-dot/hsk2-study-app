@@ -230,6 +230,31 @@
     100% { opacity: 0; transform: translateY(-16px) scale(0.95); }
   }
   .level-bar-fill.gained, .mini-bar > div.gained { animation: barFlash 0.6s ease; }
+
+  /* ---------- drill mode ---------- */
+  .drill-banner {
+    background: var(--stamp-soft);
+    color: var(--stamp);
+    font-weight: 700;
+    font-size: 13px;
+    text-align: center;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  .progress-fill.drill { background: var(--stamp); }
+  .flashcard.drill-card .face.front { border: 2px solid var(--stamp-soft); }
+  .flashcard.drill-card .face.back { background: var(--stamp); }
+
+  /* ---------- progress screen ---------- */
+  .exam-wrong-list { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; }
+  .exam-wrong-row {
+    background: var(--paper-raised); border-radius: 12px; padding: 10px 14px;
+    display: flex; justify-content: space-between; align-items: center; gap: 10px;
+  }
+  .exam-wrong-row .zh { font-size: 14px; font-weight: 600; }
+  .exam-wrong-row .meta { font-size: 12px; color: var(--ink-soft); text-align: right; }
+  .exam-disclaimer { font-size: 11px; color: var(--ink-soft); text-align: center; margin-top: 10px; line-height: 1.6; }
   @keyframes barFlash {
     0% { filter: brightness(1); }
     40% { filter: brightness(1.6); }
@@ -653,6 +678,9 @@
     _levelUpTimer: null,
     _lastXpGain: null,
     _xpGainTimer: null,
+    drillQueue: [],
+    drillTotal: 0,
+    drillMastered: 0,
   };
 
   // ---------------------------------------------------------------
@@ -964,6 +992,49 @@
     }
   }
 
+  // ---------------------------------------------------------------
+  // 特訓モード：まだ覚えていない語だけを、覚えるまで繰り返し出題する
+  // ---------------------------------------------------------------
+  function buildDrillQueue() {
+    const unknown = VOCAB.filter((v) => !state.known[v.h]);
+    const pool = shuffle(unknown.length > 0 ? unknown : VOCAB.slice());
+    const CAP = 20;
+    return pool.slice(0, CAP);
+  }
+
+  function startDrill() {
+    state.drillQueue = buildDrillQueue();
+    state.drillTotal = state.drillQueue.length;
+    state.drillMastered = 0;
+    state.flipped = false;
+    state.screen = "drill";
+    render();
+  }
+
+  function drillAnswer(gotIt) {
+    const card = state.drillQueue[0];
+    if (gotIt) {
+      if (!state.known[card.h]) { gainXp(10); }
+      state.known[card.h] = true;
+      state.drillQueue.shift();
+      state.drillMastered++;
+    } else {
+      gainXp(4);
+      const removed = state.drillQueue.shift();
+      const insertAt = Math.min(state.drillQueue.length, 3);
+      state.drillQueue.splice(insertAt, 0, removed);
+    }
+    saveProgress();
+    state.flipped = false;
+    if (state.drillQueue.length === 0) {
+      state.screen = "home";
+      render();
+      showToast("特訓完了！" + state.drillMastered + "語をマスターしました 🎯");
+    } else {
+      render();
+    }
+  }
+
   function goHome() {
     state.screen = "home";
     render();
@@ -1078,11 +1149,19 @@
 
         <div class="progress-fill-wrap">
           <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
-          <div class="progress-label">全体の習得率 ${pct}%（${totalProg.known}/${totalProg.total}語）</div>
+          <div class="progress-label">
+            全体の習得率 ${pct}%（${totalProg.known}/${totalProg.total}語）
+            <button class="bp-toggle" id="open-progress" style="margin-left:6px;">全体の進捗を見る →</button>
+          </div>
         </div>
 
         <div class="section-title">学習モードを選ぶ</div>
         <div class="mode-grid">
+          <button class="mode-card drill-mode-card" id="mode-drill" style="grid-column: 1 / -1;">
+            <span class="icon">🔥</span>
+            <div class="title">特訓モード（これだけ覚える）</div>
+            <div class="desc">まだ覚えていない語だけを、覚えるまで繰り返し出題</div>
+          </button>
           <button class="mode-card" id="mode-flash">
             <span class="icon">🎴</span>
             <div class="title">フラッシュカード</div>
@@ -1108,10 +1187,15 @@
     wrap.querySelectorAll(".cat-row").forEach(row => {
       row.addEventListener("click", () => selectCategory(row.dataset.cat));
     });
+    wrap.querySelector("#mode-drill").addEventListener("click", startDrill);
     wrap.querySelector("#mode-flash").addEventListener("click", startFlashcards);
     wrap.querySelector("#mode-quiz").addEventListener("click", startQuiz);
     wrap.querySelector("#mode-exam").addEventListener("click", () => {
       if (window.HSKExam) window.HSKExam.open();
+    });
+    wrap.querySelector("#open-progress").addEventListener("click", () => {
+      state.screen = "progress";
+      render();
     });
 
     const genSyncBtn = wrap.querySelector("#gen-sync");
@@ -1271,6 +1355,163 @@
     return wrap;
   }
 
+  function renderDrill() {
+    const card = state.drillQueue[0];
+    const done = state.drillTotal - state.drillQueue.length;
+    const wrap = el(`
+      <div>
+        <div class="study-header">
+          <button class="back-link" id="back">← 戻る</button>
+          ${miniLevelHtml()}
+          <div class="deck-pos">残り ${state.drillQueue.length}語</div>
+        </div>
+        <div class="drill-banner">🔥 特訓モード — 習得 ${done} / ${state.drillTotal}語</div>
+        <div class="progress-track" style="margin-bottom:20px;">
+          <div class="progress-fill drill" style="width:${(done/state.drillTotal)*100}%"></div>
+        </div>
+        <div class="flashcard-wrap">
+          <div class="flashcard drill-card ${state.flipped?'flipped':''}" id="card">
+            <div class="face front">
+              <div class="hanzi">${card.h}</div>
+              <div class="pinyin">${card.p}</div>
+              <div class="tap-hint">タップして意味を見る</div>
+            </div>
+            <div class="face back">
+              <div class="meaning">${card.m}</div>
+              <div class="category-tag">${card.c}</div>
+            </div>
+          </div>
+        </div>
+        <div class="rate-row">
+          <button class="rate-btn again" id="again">まだ</button>
+          <button class="rate-btn got-it" id="gotit">覚えた✓</button>
+        </div>
+      </div>
+    `);
+    wrap.querySelector("#back").addEventListener("click", goHome);
+    wrap.querySelector("#card").addEventListener("click", flipCard);
+    wrap.querySelector("#again").addEventListener("click", (e) => { e.stopPropagation(); drillAnswer(false); });
+    wrap.querySelector("#gotit").addEventListener("click", (e) => { e.stopPropagation(); drillAnswer(true); });
+    return wrap;
+  }
+
+  // ---------------------------------------------------------------
+  // 全体の進捗（問題演習の記録は exam.js の localStorage を直接読む）
+  // ---------------------------------------------------------------
+  function pad2(n) { return String(n).padStart(2, "0"); }
+
+  function computeMockScoreFromAttempts(mockPrefix) {
+    let store;
+    try { store = JSON.parse(localStorage.getItem("hsk-exam-attempts-v1") || "{}"); } catch (e) { store = {}; }
+    let listeningCorrect = 0, readingCorrect = 0, attempted = 0, lastAt = 0;
+    for (let n = 1; n <= 60; n++) {
+      const id = mockPrefix + "-" + pad2(n);
+      const entry = store[id];
+      if (!entry || !entry.history || !entry.history.length) return null;
+      attempted++;
+      const latest = entry.history[entry.history.length - 1];
+      lastAt = Math.max(lastAt, latest.submitted_at || 0);
+      if (n <= 35) { if (latest.is_correct) listeningCorrect++; }
+      else { if (latest.is_correct) readingCorrect++; }
+    }
+    const score = Math.round((100 * listeningCorrect / 35 + 100 * readingCorrect / 25) * 10) / 10;
+    return { listeningCorrect, readingCorrect, score, lastAt };
+  }
+
+  function getOfficialResults() {
+    let store;
+    try { store = JSON.parse(localStorage.getItem("hsk-exam-official-v1") || "{}"); } catch (e) { store = {}; }
+    return store;
+  }
+
+  function getExamBankStats() {
+    let store;
+    try { store = JSON.parse(localStorage.getItem("hsk-exam-attempts-v1") || "{}"); } catch (e) { store = {}; }
+    const ids = Object.keys(store);
+    let correct = 0;
+    ids.forEach((id) => {
+      const entry = store[id];
+      if (entry && entry.history && entry.history.length) {
+        const latest = entry.history[entry.history.length - 1];
+        if (latest.is_correct) correct++;
+      }
+    });
+    return { attempted: ids.length, correct: correct, total: 180 };
+  }
+
+  function renderProgress() {
+    const totalProg = categoryProgress("すべて");
+    const pct = Math.round((totalProg.known / totalProg.total) * 100);
+    const lvl = levelInfo(state.xp);
+    const bankStats = getExamBankStats();
+    const officialStore = getOfficialResults();
+    const officialPapers = [
+      { id: "H20901", title: "公式公開問題 H20901" },
+      { id: "H20902", title: "公式公開問題 H20902" }
+    ];
+
+    const mockRows = ["M1", "M2", "M3"].map((m) => {
+      const r = computeMockScoreFromAttempts(m);
+      const label = { M1: "第1回", M2: "第2回", M3: "第3回" }[m];
+      if (!r) return `<div class="exam-wrong-row"><span class="zh">${label}（60問の形式練習）</span><span class="meta">未挑戦 / 進行中</span></div>`;
+      return `<div class="exam-wrong-row"><span class="zh">${label}（60問の形式練習）</span><span class="meta">自己採点の目安 ${r.score.toFixed(1)}（聞${r.listeningCorrect}/35・読${r.readingCorrect}/25）</span></div>`;
+    }).join("");
+
+    const officialRows = officialPapers.map((p) => {
+      const rec = officialStore[p.id];
+      const res = rec && (rec.lastResult || rec.firstSeen);
+      if (!res || res.score === null || res.score === undefined) {
+        return `<div class="exam-wrong-row"><span class="zh">${p.title}</span><span class="meta">未挑戦 / 未完了</span></div>`;
+      }
+      return `<div class="exam-wrong-row"><span class="zh">${p.title}</span><span class="meta">自己採点の目安 ${res.score.toFixed(1)}（聞${res.listeningCorrect}/35・読${res.readingCorrect}/25）</span></div>`;
+    }).join("");
+
+    const catRows = CATEGORIES.filter((c) => c !== "すべて").map((cat) => {
+      const prog = categoryProgress(cat);
+      const cpct = prog.total ? Math.round((prog.known / prog.total) * 100) : 0;
+      return `<div class="exam-wrong-row"><span class="zh">${cat}</span><span class="meta">${prog.known}/${prog.total}語（${cpct}%）</span></div>`;
+    }).join("");
+
+    const wrap = el(`
+      <div>
+        <div class="study-header">
+          <button class="back-link" id="back">← 戻る</button>
+          <div class="deck-pos">全体の進捗</div>
+        </div>
+
+        <div class="level-card">
+          <div class="row">
+            <div class="lv-wrap"><span class="lv">Lv.${lvl.level}</span><span class="streak">🔥 ${state.streak}日連続</span></div>
+            <div class="xp-num">総XP ${state.xp}</div>
+          </div>
+          <div class="level-bar-track"><div class="level-bar-fill" style="width:${lvl.pct}%"></div></div>
+        </div>
+
+        <div class="section-title">単語学習（カテゴリ別）</div>
+        <div class="exam-wrong-list">
+          <div class="exam-wrong-row"><span class="zh">全体</span><span class="meta">${totalProg.known}/${totalProg.total}語（${pct}%）</span></div>
+          ${catRows}
+        </div>
+
+        <div class="section-title">問題演習（オリジナル180問）</div>
+        <div class="exam-wrong-list">
+          <div class="exam-wrong-row"><span class="zh">解答済み問題</span><span class="meta">${bankStats.attempted}/${bankStats.total}問</span></div>
+          <div class="exam-wrong-row"><span class="zh">直近の正解数</span><span class="meta">${bankStats.correct}/${bankStats.attempted || 0}問</span></div>
+        </div>
+
+        <div class="section-title">自己採点の目安（60問モード）</div>
+        <div class="exam-wrong-list">${mockRows}</div>
+
+        <div class="section-title">自己採点の目安（公式公開問題）</div>
+        <div class="exam-wrong-list">${officialRows}</div>
+
+        <div class="exam-disclaimer" style="margin-top:4px;">自己採点の目安は本番の確定点・合否を保証するものではありません。60問または公式問題の聞き取り・読解を両方解答した場合にのみ表示されます。</div>
+      </div>
+    `);
+    wrap.querySelector("#back").addEventListener("click", goHome);
+    return wrap;
+  }
+
   function render() {
     const root = document.getElementById("hsk-root");
     if (!state.loaded) {
@@ -1283,6 +1524,8 @@
     else if (state.screen === "flashcard") content = renderFlashcard();
     else if (state.screen === "quiz") content = renderQuiz();
     else if (state.screen === "quizResult") content = renderQuizResult();
+    else if (state.screen === "drill") content = renderDrill();
+    else if (state.screen === "progress") content = renderProgress();
     root.appendChild(content);
 
     if (!document.getElementById("hsk-toast")) {
