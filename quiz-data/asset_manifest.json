@@ -1,0 +1,325 @@
+{
+  "assets": [
+    {
+      "id": "apples2",
+      "file": "assets/apples2.svg",
+      "description_ja": "リンゴが2個。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "リンゴが2個。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "apples3",
+      "file": "assets/apples3.svg",
+      "description_ja": "リンゴが3個。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "リンゴが3個。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "cup_red",
+      "file": "assets/cup_red.svg",
+      "description_ja": "赤いカップが1個。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "赤いカップが1個。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "cup_blue",
+      "file": "assets/cup_blue.svg",
+      "description_ja": "青いカップが1個。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "青いカップが1個。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "book_on",
+      "file": "assets/book_on.svg",
+      "description_ja": "机の上に本が1冊。机の反対側には何もない。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "机の上に本が1冊。机の反対側には何もない。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "book_under",
+      "file": "assets/book_under.svg",
+      "description_ja": "机の下に本が1冊。机の反対側には何もない。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "机の下に本が1冊。机の反対側には何もない。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "clock730",
+      "file": "assets/clock730.svg",
+      "description_ja": "アナログ時計が7時30分を示す。短針は7と8の間、長針は6。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "アナログ時計が7時30分を示す。短針は7と8の間、長針は6。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "clock830",
+      "file": "assets/clock830.svg",
+      "description_ja": "アナログ時計が8時30分を示す。短針は8と9の間、長針は6。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "アナログ時計が8時30分を示す。短針は8と9の間、長針は6。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "rain",
+      "file": "assets/rain.svg",
+      "description_ja": "雨が降っている。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "雨が降っている。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "snow",
+      "file": "assets/snow.svg",
+      "description_ja": "雪が降っている。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "雪が降っている。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "sun",
+      "file": "assets/sun.svg",
+      "description_ja": "晴天。太陽のみで雨や雪はない。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "晴天。太陽のみで雨や雪はない。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "plane",
+      "file": "assets/plane.svg",
+      "description_ja": "飛行機を上から見た形。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "飛行機を上から見た形。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "train",
+      "file": "assets/train.svg",
+      "description_ja": "線路上の列車の正面。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "線路上の列車の正面。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "bus",
+      "file": "assets/bus.svg",
+      "description_ja": "窓が並ぶ大型バスの側面。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "窓が並ぶ大型バスの側面。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "bicycle",
+      "file": "assets/bicycle.svg",
+      "description_ja": "自転車。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "自転車。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "cat_black",
+      "file": "assets/cat_black.svg",
+      "description_ja": "黒い猫。とがった耳とひげがある。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "黒い猫。とがった耳とひげがある。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "dog",
+      "file": "assets/dog.svg",
+      "description_ja": "茶色の犬。たれ耳と鼻先がある。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "茶色の犬。たれ耳と鼻先がある。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "shirt",
+      "file": "assets/shirt.svg",
+      "description_ja": "半袖のシャツ。スカートや靴ではない。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "半袖のシャツ。スカートや靴ではない。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "skirt",
+      "file": "assets/skirt.svg",
+      "description_ja": "スカートが1着。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "スカートが1着。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "shoes",
+      "file": "assets/shoes.svg",
+      "description_ja": "靴が左右1足分、2個。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "靴が左右1足分、2個。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "eggs2",
+      "file": "assets/eggs2.svg",
+      "description_ja": "卵が2個。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "卵が2個。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "milk",
+      "file": "assets/milk.svg",
+      "description_ja": "白い牛乳の入った透明グラス。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "白い牛乳の入った透明グラス。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "tea",
+      "file": "assets/tea.svg",
+      "description_ja": "茶色いお茶が入ったカップ。表面に茶葉、上に湯気。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "茶色いお茶が入ったカップ。表面に茶葉、上に湯気。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "rice",
+      "file": "assets/rice.svg",
+      "description_ja": "白いご飯の入った茶碗と箸。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "白いご飯の入った茶碗と箸。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "fish",
+      "file": "assets/fish.svg",
+      "description_ja": "魚が1匹。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "魚が1匹。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "phone",
+      "file": "assets/phone.svg",
+      "description_ja": "スマートフォン1台。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "スマートフォン1台。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "computer",
+      "file": "assets/computer.svg",
+      "description_ja": "開いたノートパソコン。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "開いたノートパソコン。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "newspaper",
+      "file": "assets/newspaper.svg",
+      "description_ja": "見出しと記事欄がある新聞。文字は読める語にしない。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "見出しと記事欄がある新聞。文字は読める語にしない。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "basketball",
+      "file": "assets/basketball.svg",
+      "description_ja": "オレンジ色のバスケットボール。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "オレンジ色のバスケットボール。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "soccer",
+      "file": "assets/soccer.svg",
+      "description_ja": "白黒の五角形模様のサッカーボール。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "白黒の五角形模様のサッカーボール。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "running",
+      "file": "assets/running.svg",
+      "description_ja": "走っている人物。腕を振り、片足を後ろへ伸ばしている。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "走っている人物。腕を振り、片足を後ろへ伸ばしている。",
+      "qa_status": "visually_checked_schematic"
+    },
+    {
+      "id": "swimming",
+      "file": "assets/swimming.svg",
+      "description_ja": "水面で泳いでいる人物。波の上に頭と腕がある。",
+      "style": "original_schematic_svg",
+      "visible_caption": null,
+      "exam_alt": "問題の画像",
+      "review_alt": "水面で泳いでいる人物。波の上に頭と腕がある。",
+      "qa_status": "visually_checked_schematic"
+    }
+  ],
+  "note": "独自作成の簡易図。公式の写真と難易度が同等であるとは扱わない。"
+}

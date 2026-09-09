@@ -1,0 +1,112 @@
+{
+  "examples": [
+    {
+      "part": "L1",
+      "type": "image_true_false",
+      "asset_id": "sun",
+      "audio_zh": [
+        "今天是晴天。"
+      ],
+      "speakers": [
+        "narrator"
+      ],
+      "answer": "T",
+      "explanation_ja": "太陽の画像と晴天が一致する。"
+    },
+    {
+      "part": "L3",
+      "type": "audio_mc",
+      "audio_zh": [
+        "你住在哪儿？",
+        "我住在学校旁边。",
+        "男的住在哪儿？"
+      ],
+      "speakers": [
+        "female",
+        "male",
+        "narrator"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "学校旁边",
+            "pinyin": "xué xiào páng biān"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "医院里面",
+            "pinyin": "yī yuàn lǐ miàn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "商店后面",
+            "pinyin": "shāng diàn hòu miàn"
+          }
+        }
+      ],
+      "answer": "A"
+    },
+    {
+      "part": "L4",
+      "type": "audio_mc",
+      "audio_zh": [
+        "你要去商店吗？",
+        "对。",
+        "买什么？",
+        "买一个杯子。",
+        "男的要买什么？"
+      ],
+      "speakers": [
+        "female",
+        "male",
+        "female",
+        "male",
+        "narrator"
+      ],
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "书",
+            "pinyin": "shū"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "杯子",
+            "pinyin": "bēi zi"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "衣服",
+            "pinyin": "yī fu"
+          }
+        }
+      ],
+      "answer": "B"
+    },
+    {
+      "part": "R3",
+      "type": "text_true_false",
+      "prompt": {
+        "zh": "小李今天在学校。",
+        "pinyin": "xiǎo lǐ jīn tiān zài xué xiào 。"
+      },
+      "statement": {
+        "zh": "小李今天不在学校。",
+        "pinyin": "xiǎo lǐ jīn tiān bù zài xué xiào 。"
+      },
+      "answer": "F",
+      "explanation_ja": "在学校と不在学校は反対。"
+    }
+  ],
+  "note": "180問の外にある共通の例題。L2/R1/R2/R4はgroups内の例題を使用する。音声例は再生前に本文を見せない。"
+}

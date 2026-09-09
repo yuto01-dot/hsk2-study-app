@@ -1,0 +1,788 @@
+{
+  "tags": [
+    {
+      "id": "ability",
+      "label_ja": "能力",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-15",
+        "M1-35",
+        "M2-24",
+        "M2-49",
+        "M3-18",
+        "M3-59"
+      ]
+    },
+    {
+      "id": "action",
+      "label_ja": "動作",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-10",
+        "M1-12",
+        "M1-17",
+        "M1-40",
+        "M2-09",
+        "M2-19",
+        "M2-20",
+        "M2-40",
+        "M3-07",
+        "M3-13"
+      ]
+    },
+    {
+      "id": "again",
+      "label_ja": "繰り返し",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-17",
+        "M3-41"
+      ]
+    },
+    {
+      "id": "animal",
+      "label_ja": "動物",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-07",
+        "M2-07",
+        "M3-10",
+        "M3-37"
+      ]
+    },
+    {
+      "id": "calculation",
+      "label_ja": "計算",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-32",
+        "M2-32",
+        "M2-46",
+        "M3-32",
+        "M3-47"
+      ]
+    },
+    {
+      "id": "change",
+      "label_ja": "変化・変更",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-18",
+        "M1-31",
+        "M3-28",
+        "M3-36"
+      ]
+    },
+    {
+      "id": "choice",
+      "label_ja": "選択",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-25"
+      ]
+    },
+    {
+      "id": "classifier",
+      "label_ja": "量詞",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-08",
+        "M1-16",
+        "M1-37",
+        "M1-45",
+        "M2-06",
+        "M2-08",
+        "M2-10",
+        "M2-12",
+        "M2-37",
+        "M2-39",
+        "M2-51",
+        "M3-08"
+      ]
+    },
+    {
+      "id": "clothes",
+      "label_ja": "衣服",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-08",
+        "M1-16",
+        "M2-08",
+        "M2-12",
+        "M2-37",
+        "M3-08",
+        "M3-16"
+      ]
+    },
+    {
+      "id": "color",
+      "label_ja": "色",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-02",
+        "M1-07",
+        "M2-02",
+        "M2-35",
+        "M3-01",
+        "M3-37"
+      ]
+    },
+    {
+      "id": "comparison",
+      "label_ja": "比較",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-27",
+        "M1-42",
+        "M2-32",
+        "M2-46",
+        "M2-50",
+        "M3-23",
+        "M3-49"
+      ]
+    },
+    {
+      "id": "completion",
+      "label_ja": "完了",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-13",
+        "M1-44",
+        "M1-48",
+        "M1-60",
+        "M2-30",
+        "M2-47",
+        "M3-19",
+        "M3-28"
+      ]
+    },
+    {
+      "id": "contrast",
+      "label_ja": "逆接",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-47",
+        "M3-48"
+      ]
+    },
+    {
+      "id": "correction",
+      "label_ja": "訂正",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-21",
+        "M3-31",
+        "M3-34"
+      ]
+    },
+    {
+      "id": "date",
+      "label_ja": "日付",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-34"
+      ]
+    },
+    {
+      "id": "degree",
+      "label_ja": "程度",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-25"
+      ]
+    },
+    {
+      "id": "degree_complement",
+      "label_ja": "程度補語",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-43",
+        "M3-59"
+      ]
+    },
+    {
+      "id": "distance",
+      "label_ja": "距離",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-41",
+        "M2-59"
+      ]
+    },
+    {
+      "id": "distractor",
+      "label_ja": "別の情報との混同",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-21",
+        "M1-46",
+        "M2-22",
+        "M2-27",
+        "M3-22",
+        "M3-30"
+      ]
+    },
+    {
+      "id": "duration",
+      "label_ja": "期間・所要時間",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-35",
+        "M1-49",
+        "M3-30"
+      ]
+    },
+    {
+      "id": "experience",
+      "label_ja": "経験",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-30",
+        "M2-42",
+        "M3-33",
+        "M3-50",
+        "M3-56"
+      ]
+    },
+    {
+      "id": "family",
+      "label_ja": "家族",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-23"
+      ]
+    },
+    {
+      "id": "food",
+      "label_ja": "食べ物・飲み物",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-01",
+        "M1-09",
+        "M1-13",
+        "M1-20",
+        "M1-25",
+        "M1-37",
+        "M2-01",
+        "M2-10",
+        "M2-13",
+        "M2-16",
+        "M2-39",
+        "M3-09",
+        "M3-14",
+        "M3-19",
+        "M3-38"
+      ]
+    },
+    {
+      "id": "frequency",
+      "label_ja": "頻度",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-18",
+        "M3-11",
+        "M3-40",
+        "M3-55"
+      ]
+    },
+    {
+      "id": "habit",
+      "label_ja": "習慣",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-27"
+      ]
+    },
+    {
+      "id": "health",
+      "label_ja": "体調",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-26",
+        "M1-58",
+        "M2-34"
+      ]
+    },
+    {
+      "id": "immediacy",
+      "label_ja": "早さ・即時性",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-44"
+      ]
+    },
+    {
+      "id": "inference",
+      "label_ja": "推定",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-29",
+        "M3-29"
+      ]
+    },
+    {
+      "id": "location",
+      "label_ja": "位置",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-03",
+        "M1-33",
+        "M1-38",
+        "M1-49",
+        "M1-53",
+        "M2-03",
+        "M2-25",
+        "M2-29",
+        "M2-36",
+        "M2-41",
+        "M3-03",
+        "M3-12",
+        "M3-24",
+        "M3-60"
+      ]
+    },
+    {
+      "id": "logic",
+      "label_ja": "関係の整理",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-49"
+      ]
+    },
+    {
+      "id": "money",
+      "label_ja": "金額",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-22",
+        "M1-32",
+        "M2-22",
+        "M2-26",
+        "M3-32"
+      ]
+    },
+    {
+      "id": "negation",
+      "label_ja": "否定",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-23",
+        "M1-24",
+        "M1-50",
+        "M2-02",
+        "M2-16",
+        "M2-19",
+        "M2-21",
+        "M2-31",
+        "M2-36",
+        "M3-01",
+        "M3-03",
+        "M3-14",
+        "M3-16",
+        "M3-23",
+        "M3-25",
+        "M3-50"
+      ]
+    },
+    {
+      "id": "not_yet",
+      "label_ja": "未完了",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-28",
+        "M1-60",
+        "M2-30",
+        "M2-47",
+        "M2-53",
+        "M3-46",
+        "M3-53"
+      ]
+    },
+    {
+      "id": "number",
+      "label_ja": "数・数量",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-01",
+        "M1-09",
+        "M1-27",
+        "M1-45",
+        "M2-01",
+        "M2-13",
+        "M2-23",
+        "M3-02",
+        "M3-09",
+        "M3-22",
+        "M3-38"
+      ]
+    },
+    {
+      "id": "object",
+      "label_ja": "持ち物・道具",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-02",
+        "M1-12",
+        "M1-14",
+        "M1-17",
+        "M2-20",
+        "M2-40",
+        "M3-18",
+        "M3-40"
+      ]
+    },
+    {
+      "id": "ownership",
+      "label_ja": "所有者",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-57",
+        "M2-25",
+        "M3-29"
+      ]
+    },
+    {
+      "id": "paraphrase",
+      "label_ja": "言い換え",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-47"
+      ]
+    },
+    {
+      "id": "past",
+      "label_ja": "過去",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-24"
+      ]
+    },
+    {
+      "id": "permission",
+      "label_ja": "許可",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-56",
+        "M3-54"
+      ]
+    },
+    {
+      "id": "person",
+      "label_ja": "人物",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-14",
+        "M1-23",
+        "M1-47",
+        "M2-28",
+        "M2-52",
+        "M3-26",
+        "M3-34",
+        "M3-57"
+      ]
+    },
+    {
+      "id": "place",
+      "label_ja": "場所",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-24",
+        "M1-29",
+        "M2-28"
+      ]
+    },
+    {
+      "id": "plan",
+      "label_ja": "予定・意図",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-31",
+        "M1-48",
+        "M2-21",
+        "M2-33",
+        "M2-34",
+        "M3-13",
+        "M3-31",
+        "M3-39",
+        "M3-46"
+      ]
+    },
+    {
+      "id": "preference",
+      "label_ja": "好み",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-35",
+        "M2-50",
+        "M3-48",
+        "M3-52"
+      ]
+    },
+    {
+      "id": "progressive",
+      "label_ja": "進行",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-05",
+        "M1-10",
+        "M1-41",
+        "M2-09",
+        "M3-05",
+        "M3-07",
+        "M3-24",
+        "M3-54"
+      ]
+    },
+    {
+      "id": "prohibition",
+      "label_ja": "禁止",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-17",
+        "M2-45"
+      ]
+    },
+    {
+      "id": "purpose",
+      "label_ja": "目的",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-54",
+        "M3-26"
+      ]
+    },
+    {
+      "id": "question",
+      "label_ja": "疑問詞",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-52",
+        "M1-53",
+        "M1-54",
+        "M1-57",
+        "M1-58",
+        "M1-59",
+        "M2-51",
+        "M2-52",
+        "M2-57",
+        "M2-59",
+        "M3-52",
+        "M3-55",
+        "M3-60"
+      ]
+    },
+    {
+      "id": "reason",
+      "label_ja": "理由",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-26",
+        "M1-34",
+        "M1-43",
+        "M2-26",
+        "M2-44",
+        "M2-57",
+        "M3-33",
+        "M3-35"
+      ]
+    },
+    {
+      "id": "recipient",
+      "label_ja": "相手",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-43"
+      ]
+    },
+    {
+      "id": "reference",
+      "label_ja": "指示対象",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-22",
+        "M1-33",
+        "M3-35"
+      ]
+    },
+    {
+      "id": "request",
+      "label_ja": "依頼",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-56",
+        "M2-55",
+        "M3-41"
+      ]
+    },
+    {
+      "id": "response",
+      "label_ja": "応答",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-51",
+        "M1-55",
+        "M1-56",
+        "M2-53",
+        "M2-54",
+        "M2-55",
+        "M2-60",
+        "M3-51",
+        "M3-53",
+        "M3-56"
+      ]
+    },
+    {
+      "id": "result",
+      "label_ja": "結果補語",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-44",
+        "M3-12",
+        "M3-51"
+      ]
+    },
+    {
+      "id": "scope",
+      "label_ja": "範囲・全称",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-50",
+        "M2-48",
+        "M2-49",
+        "M3-02",
+        "M3-14"
+      ]
+    },
+    {
+      "id": "sequence",
+      "label_ja": "順番",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-58"
+      ]
+    },
+    {
+      "id": "shi_de",
+      "label_ja": "是…的",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-58",
+        "M3-27",
+        "M3-57"
+      ]
+    },
+    {
+      "id": "sport",
+      "label_ja": "運動",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-15",
+        "M1-19",
+        "M1-40",
+        "M2-15",
+        "M2-18",
+        "M3-15",
+        "M3-20"
+      ]
+    },
+    {
+      "id": "state",
+      "label_ja": "状態の持続",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-29",
+        "M3-42"
+      ]
+    },
+    {
+      "id": "suggestion",
+      "label_ja": "提案",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-20",
+        "M2-60",
+        "M3-15",
+        "M3-58"
+      ]
+    },
+    {
+      "id": "superlative",
+      "label_ja": "最上級",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M3-45"
+      ]
+    },
+    {
+      "id": "time",
+      "label_ja": "時刻・時点",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-04",
+        "M1-19",
+        "M1-21",
+        "M1-28",
+        "M1-46",
+        "M1-52",
+        "M2-04",
+        "M2-11",
+        "M2-27",
+        "M2-33",
+        "M2-48",
+        "M2-58",
+        "M3-04",
+        "M3-20",
+        "M3-21",
+        "M3-36",
+        "M3-44",
+        "M3-47"
+      ]
+    },
+    {
+      "id": "transport",
+      "label_ja": "交通手段",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-06",
+        "M1-11",
+        "M1-39",
+        "M1-59",
+        "M2-06",
+        "M2-14",
+        "M2-24",
+        "M2-31",
+        "M3-06",
+        "M3-11",
+        "M3-27",
+        "M3-30",
+        "M3-39"
+      ]
+    },
+    {
+      "id": "unsupported",
+      "label_ja": "本文に根拠なし",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M2-49"
+      ]
+    },
+    {
+      "id": "weather",
+      "label_ja": "天気",
+      "existing_app_grammar_id": null,
+      "question_ids": [
+        "M1-05",
+        "M1-18",
+        "M1-34",
+        "M1-36",
+        "M1-50",
+        "M2-05",
+        "M2-17",
+        "M2-38",
+        "M3-05",
+        "M3-17"
+      ]
+    }
+  ],
+  "note": "複数タグがあるため件数の合計は180を超える。既存アプリIDは実装時に対応付ける。"
+}

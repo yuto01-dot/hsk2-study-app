@@ -1,0 +1,8432 @@
+{
+  "schema_version": "1.0.0",
+  "content_version": "1.0.0",
+  "exam_version": "HSK_2_0_LEVEL_2_JAPAN",
+  "language": "ja",
+  "content_note": "全180問は独自作成。公式過去問の転載ではない。簡易画像・合成音声用台本による形式別練習。",
+  "questions": [
+    {
+      "id": "M1-01",
+      "mock_id": "M1",
+      "number": 1,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "苹果は3個。数と名詞を一緒に確認する。",
+      "tags": [
+        "number",
+        "food"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "apples3",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这里有三个苹果。",
+              "pinyin": "zhè lǐ yǒu sān gè píng guǒ 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-02",
+      "mock_id": "M1",
+      "number": 2,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "画像は赤いカップ。白色と红色を区別する。",
+      "tags": [
+        "color",
+        "object"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "cup_red",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这个杯子是白色的。",
+              "pinyin": "zhè ge bēi zi shì bái sè de 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-03",
+      "mock_id": "M1",
+      "number": 3,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "本は机の下。下面が判断の決め手。",
+      "tags": [
+        "location"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "book_under",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "书在桌子下面。",
+              "pinyin": "shū zài zhuō zi xià miàn 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-04",
+      "mock_id": "M1",
+      "number": 4,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "時計は7時30分。八点半ではない。",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "clock730",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "现在是八点半。",
+              "pinyin": "xiàn zài shì bā diǎn bàn 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-05",
+      "mock_id": "M1",
+      "number": 5,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "雨が降っている画像。正在は動作の進行。",
+      "tags": [
+        "progressive",
+        "weather"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "rain",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "外面正在下雨。",
+              "pinyin": "wài miàn zhèng zài xià yǔ 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-06",
+      "mock_id": "M1",
+      "number": 6,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "画像は飛行機。飞机と火车を区別する。",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "plane",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这是火车。",
+              "pinyin": "zhè shì huǒ chē 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-07",
+      "mock_id": "M1",
+      "number": 7,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "黒い猫なので一致する。只は動物を数える語。",
+      "tags": [
+        "color",
+        "animal"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "cat_black",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这只猫是黑色的。",
+              "pinyin": "zhè zhǐ māo shì hēi sè de 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-08",
+      "mock_id": "M1",
+      "number": 8,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "画像はシャツ。裙子はスカート。",
+      "tags": [
+        "clothes",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "shirt",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这是一条裙子。",
+              "pinyin": "zhè shì yī tiáo qún zi 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-09",
+      "mock_id": "M1",
+      "number": 9,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "画像の卵は2個。两个を聞き取る。",
+      "tags": [
+        "number",
+        "food"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "eggs2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "我买了两个鸡蛋。",
+              "pinyin": "wǒ mǎi le liǎng gè jī dàn 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-10",
+      "mock_id": "M1",
+      "number": 10,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "人物は走っている。睡觉は寝ること。",
+      "tags": [
+        "action",
+        "progressive"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "running",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "他正在睡觉。",
+              "pinyin": "tā zhèng zài shuì jiào 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-11",
+      "mock_id": "M1",
+      "number": 11,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "通学手段は骑自行车。近いという情報は補助。",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你怎么去学校？",
+              "pinyin": "nǐ zěn me qù xué xiào ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我家很近，我骑自行车去。",
+              "pinyin": "wǒ jiā hěn jìn ， wǒ qí zì xíng chē qù 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-12",
+      "mock_id": "M1",
+      "number": 12,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "E",
+      "explanation_ja": "看と报纸の組み合わせから新聞を選ぶ。",
+      "tags": [
+        "action",
+        "object"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你在看什么？",
+              "pinyin": "nǐ zài kàn shén me ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我在看今天的报纸。",
+              "pinyin": "wǒ zài kàn jīn tiān de bào zhǐ 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-13",
+      "mock_id": "M1",
+      "number": 13,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "食べる物は米饭。已经做好了は完成済み。",
+      "tags": [
+        "food",
+        "completion"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "晚上吃什么？",
+              "pinyin": "wǎn shàng chī shén me ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "吃米饭吧，我已经做好了。",
+              "pinyin": "chī mǐ fàn ba ， wǒ yǐ jīng zuò hǎo le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-14",
+      "mock_id": "M1",
+      "number": 14,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "手机と打电话が電話の画像に対応する。",
+      "tags": [
+        "object",
+        "person"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你的手机呢？",
+              "pinyin": "nǐ de shǒu jī ne ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "在这儿，我要给妈妈打电话。",
+              "pinyin": "zài zhè ér ， wǒ yào gěi mā mā dǎ diàn huà 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-15",
+      "mock_id": "M1",
+      "number": 15,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "D",
+      "explanation_ja": "踢足球はサッカー。篮球と混同しない。",
+      "tags": [
+        "ability",
+        "sport"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你会踢足球吗？",
+              "pinyin": "nǐ huì tī zú qiú ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "会，我们一起去踢吧。",
+              "pinyin": "huì ， wǒ men yì qǐ qù tī ba 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-16",
+      "mock_id": "M1",
+      "number": 16,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "E",
+      "explanation_ja": "双は靴など対になる物を数える。",
+      "tags": [
+        "classifier",
+        "clothes"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你想买什么？",
+              "pinyin": "nǐ xiǎng mǎi shén me ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "这双鞋不错，我想试一下。",
+              "pinyin": "zhè shuāng xié bù cuò ， wǒ xiǎng shì yī xià 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-17",
+      "mock_id": "M1",
+      "number": 17,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "电脑で書いているのでパソコン。",
+      "tags": [
+        "action",
+        "object"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你在做什么？",
+              "pinyin": "nǐ zài zuò shén me ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我在用电脑写东西。",
+              "pinyin": "wǒ zài yòng diàn nǎo xiě dōng xī 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-18",
+      "mock_id": "M1",
+      "number": 18,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "下雪は雪が降ること。",
+      "tags": [
+        "weather",
+        "change"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "今天外面白了。",
+              "pinyin": "jīn tiān wài miàn bái le 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "是啊，下雪了。",
+              "pinyin": "shì a ， xià xuě le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-19",
+      "mock_id": "M1",
+      "number": 19,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "D",
+      "explanation_ja": "好きな活動は游泳。天气热だけで選ばない。",
+      "tags": [
+        "sport",
+        "time"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你周末喜欢做什么？",
+              "pinyin": "nǐ zhōu mò xǐ huān zuò shén me ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "天气热的时候，我喜欢游泳。",
+              "pinyin": "tiān qì rè de shí hòu ， wǒ xǐ huān yóu yǒng 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-20",
+      "mock_id": "M1",
+      "number": 20,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "話題は魚料理。好吃はおいしい。",
+      "tags": [
+        "food",
+        "suggestion"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M1-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "今天的鱼怎么样？",
+              "pinyin": "jīn tiān de yú zěn me yàng ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "很好吃，你也吃一点儿吧。",
+              "pinyin": "hěn hǎo chī ， nǐ yě chī yì diǎn ér ba 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-21",
+      "mock_id": "M1",
+      "number": 21,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "授業は9時。8時半は朝食の時刻。",
+      "tags": [
+        "time",
+        "distractor"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "八点半",
+            "pinyin": "bā diǎn bàn"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "九点",
+            "pinyin": "jiǔ diǎn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "八点",
+            "pinyin": "bā diǎn"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你几点去上课？",
+              "pinyin": "nǐ jǐ diǎn qù shàng kè ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "九点，八点半先吃早饭。",
+              "pinyin": "jiǔ diǎn ， bā diǎn bàn xiān chī zǎo fàn 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的几点上课？",
+              "pinyin": "nán de jǐ diǎn shàng kè ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-22",
+      "mock_id": "M1",
+      "number": 22,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "这本は18元。那本の20元と区別する。",
+      "tags": [
+        "money",
+        "reference"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "十八块",
+            "pinyin": "shí bā kuài"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "八十块",
+            "pinyin": "bā shí kuài"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "二十块",
+            "pinyin": "èr shí kuài"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "这本书多少钱？",
+              "pinyin": "zhè běn shū duō shǎo qián ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "十八块，那本二十块。",
+              "pinyin": "shí bā kuài ， nà běn èr shí kuài 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这本书多少钱？",
+              "pinyin": "zhè běn shū duō shǎo qián ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-23",
+      "mock_id": "M1",
+      "number": 23,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "不是の後で弟弟に訂正される。",
+      "tags": [
+        "person",
+        "negation"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "哥哥",
+            "pinyin": "gē gē"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "弟弟",
+            "pinyin": "dì di"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "爸爸",
+            "pinyin": "bà bà"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "小王是你哥哥吗？",
+              "pinyin": "xiǎo wáng shì nǐ gē gē ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不是，他是我弟弟。",
+              "pinyin": "bú shì ， tā shì wǒ dì di 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "小王是谁？",
+              "pinyin": "xiǎo wáng shì shuí ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-24",
+      "mock_id": "M1",
+      "number": 24,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "没去を落とさない。昨日は家で休んだ。",
+      "tags": [
+        "negation",
+        "past",
+        "place"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "家",
+            "pinyin": "jiā"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "学校",
+            "pinyin": "xué xiào"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "商店",
+            "pinyin": "shāng diàn"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你昨天去商店了吗？",
+              "pinyin": "nǐ zuó tiān qù shāng diàn le ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "没去，我昨天在家休息。",
+              "pinyin": "méi qù ， wǒ zuó tiān zài jiā xiū xī 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的昨天在哪儿？",
+              "pinyin": "nán de zuó tiān zài nǎ ér ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-25",
+      "mock_id": "M1",
+      "number": 25,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "選択肢として出た咖啡ではなく、回答の茶を選ぶ。",
+      "tags": [
+        "choice",
+        "food"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "咖啡",
+            "pinyin": "kā fēi"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "茶",
+            "pinyin": "chá"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "牛奶",
+            "pinyin": "niú nǎi"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你想喝茶还是咖啡？",
+              "pinyin": "nǐ xiǎng hē chá hái shì kā fēi ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我想喝茶。",
+              "pinyin": "wǒ xiǎng hē chá 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的想喝什么？",
+              "pinyin": "nán de xiǎng hē shén me ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-26",
+      "mock_id": "M1",
+      "number": 26,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "理由は体調。不太舒服はあまり具合がよくない。",
+      "tags": [
+        "reason",
+        "health"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "身体不舒服",
+            "pinyin": "shēn tǐ bù shū fú"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "不喜欢",
+            "pinyin": "bù xǐ huān"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "太忙了",
+            "pinyin": "tài máng le"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你怎么不吃了？",
+              "pinyin": "nǐ zěn me bù chī le ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "因为我不太舒服。",
+              "pinyin": "yīn wèi wǒ bù tài shū fú 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的为什么不吃了？",
+              "pinyin": "nán de wèi shén me bù chī le ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-27",
+      "mock_id": "M1",
+      "number": 27,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "問われたのは妹。兄の年齢を計算しない。",
+      "tags": [
+        "number",
+        "comparison"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "十六岁",
+            "pinyin": "shí liù suì"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "十三岁",
+            "pinyin": "shí sān suì"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "十九岁",
+            "pinyin": "shí jiǔ suì"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你妹妹多大？",
+              "pinyin": "nǐ mèi mèi duō dà ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "十六岁，比我小三岁。",
+              "pinyin": "shí liù suì ， bǐ wǒ xiǎo sān suì 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "妹妹多大？",
+              "pinyin": "mèi mèi duō dà ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-28",
+      "mock_id": "M1",
+      "number": 28,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "还没有は未開始。十分钟以后が答え。",
+      "tags": [
+        "time",
+        "not_yet"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "明天",
+            "pinyin": "míng tiān"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "已经开始了",
+            "pinyin": "yǐ jīng kāi shǐ le"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "十分钟以后",
+            "pinyin": "shí fēn zhōng yǐ hòu"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "电影开始了吗？",
+              "pinyin": "diàn yǐng kāi shǐ le ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "还没有，十分钟以后开始。",
+              "pinyin": "hái méi yǒu ， shí fēn zhōng yǐ hòu kāi shǐ 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "电影什么时候开始？",
+              "pinyin": "diàn yǐng shén me shí hòu kāi shǐ ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-29",
+      "mock_id": "M1",
+      "number": 29,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "料理の注文から飯店と分かる。",
+      "tags": [
+        "place",
+        "inference"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "学校",
+            "pinyin": "xué xiào"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "医院",
+            "pinyin": "yī yuàn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "饭店",
+            "pinyin": "fàn diàn"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "请坐，想吃点儿什么？",
+              "pinyin": "qǐng zuò ， xiǎng chī diǎn ér shén me ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "来一碗面条吧。",
+              "pinyin": "lái yī wǎn miàn tiáo ba 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "他们最可能在哪儿？",
+              "pinyin": "tā men zuì kě néng zài nǎ ér ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-30",
+      "mock_id": "M1",
+      "number": 30,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "去过は経験あり。去年もその根拠。",
+      "tags": [
+        "experience"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "没去过",
+            "pinyin": "méi qù guò"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "明天去",
+            "pinyin": "míng tiān qù"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "去过",
+            "pinyin": "qù guò"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你去过中国吗？",
+              "pinyin": "nǐ qù guò zhōng guó ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "去过，去年去的。",
+              "pinyin": "qù guò ， qù nián qù de 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的去过中国吗？",
+              "pinyin": "nán de qù guò zhōng guó ma ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-31",
+      "mock_id": "M1",
+      "number": 31,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "最初の提案は土曜だが、最終決定は日曜。",
+      "tags": [
+        "plan",
+        "change"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "星期六",
+            "pinyin": "xīng qī liù"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "星期五",
+            "pinyin": "xīng qī wǔ"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "星期日",
+            "pinyin": "xīng qī rì"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "我们星期六去看电影吧。",
+              "pinyin": "wǒ men xīng qī liù qù kàn diàn yǐng ba 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我星期六要工作。",
+              "pinyin": "wǒ xīng qī liù yào gōng zuò 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "那星期日呢？",
+              "pinyin": "nà xīng qī rì ne ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "可以，下午见。",
+              "pinyin": "kě yǐ ， xià wǔ jiàn 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "他们哪天去看电影？",
+              "pinyin": "tā men nǎ tiān qù kàn diàn yǐng ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-32",
+      "mock_id": "M1",
+      "number": 32,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "3冊×10元で30元。冊数と単価を分ける。",
+      "tags": [
+        "money",
+        "calculation"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "十三块",
+            "pinyin": "shí sān kuài"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "三十块",
+            "pinyin": "sān shí kuài"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "十块",
+            "pinyin": "shí kuài"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你买了几本书？",
+              "pinyin": "nǐ mǎi le jǐ běn shū ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "三本。",
+              "pinyin": "sān běn 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "一本多少钱？",
+              "pinyin": "yī běn duō shǎo qián ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "十块。",
+              "pinyin": "shí kuài 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的买书一共用了多少钱？",
+              "pinyin": "nán de mǎi shū yī gòng yòng le duō shǎo qián ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-33",
+      "mock_id": "M1",
+      "number": 33,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "床上的那个を肯定している。",
+      "tags": [
+        "location",
+        "reference"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "椅子下",
+            "pinyin": "yǐ zi xià"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "床上",
+            "pinyin": "chuáng shàng"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "桌子上",
+            "pinyin": "zhuō zi shàng"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你在找什么？",
+              "pinyin": "nǐ zài zhǎo shén me ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我的手表。",
+              "pinyin": "wǒ de shǒu biǎo 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "是不是床上的那个？",
+              "pinyin": "shì bú shì chuáng shàng de nà ge ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "对，谢谢你。",
+              "pinyin": "duì ， xiè xiè nǐ 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "手表在哪儿？",
+              "pinyin": "shǒu biǎo zài nǎ ér ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-34",
+      "mock_id": "M1",
+      "number": 34,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "行かなかった理由は雨。後半の活動と区別する。",
+      "tags": [
+        "reason",
+        "weather"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "下雨了",
+            "pinyin": "xià yǔ le"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "太累了",
+            "pinyin": "tài lèi le"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "没有时间",
+            "pinyin": "méi yǒu shí jiān"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你怎么没去跑步？",
+              "pinyin": "nǐ zěn me méi qù pǎo bù ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "今天下雨了。",
+              "pinyin": "jīn tiān xià yǔ le 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "那我们在家看电视吧。",
+              "pinyin": "nà wǒ men zài jiā kàn diàn shì ba 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "好啊。",
+              "pinyin": "hǎo a 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的为什么没去跑步？",
+              "pinyin": "nán de wèi shén me méi qù pǎo bù ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-35",
+      "mock_id": "M1",
+      "number": 35,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "半年は6か月。会一点儿は学習期間ではない。",
+      "tags": [
+        "duration",
+        "ability"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "两年",
+            "pinyin": "liǎng nián"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "一年",
+            "pinyin": "yī nián"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "半年",
+            "pinyin": "bàn nián"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你会说汉语吗？",
+              "pinyin": "nǐ huì shuō hàn yǔ ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "会一点儿。",
+              "pinyin": "huì yì diǎn ér 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "在哪儿学的？",
+              "pinyin": "zài nǎ ér xué de ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "在学校，我学了半年。",
+              "pinyin": "zài xué xiào ， wǒ xué le bàn nián 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的学汉语多长时间了？",
+              "pinyin": "nán de xué hàn yǔ duō cháng shí jiān le ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M1-36",
+      "mock_id": "M1",
+      "number": 36,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "今天是晴天。",
+        "pinyin": "jīn tiān shì qíng tiān 。"
+      },
+      "answer": "E",
+      "explanation_ja": "晴天は晴れ。太陽の画像が対応する。",
+      "tags": [
+        "weather"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M1-R1-G1"
+    },
+    {
+      "id": "M1-37",
+      "mock_id": "M1",
+      "number": 37,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "我想喝一杯茶。",
+        "pinyin": "wǒ xiǎng hē yī bēi chá 。"
+      },
+      "answer": "A",
+      "explanation_ja": "一杯茶に対応する画像を選ぶ。",
+      "tags": [
+        "food",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M1-R1-G1"
+    },
+    {
+      "id": "M1-38",
+      "mock_id": "M1",
+      "number": 38,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "这本书在桌子上。",
+        "pinyin": "zhè běn shū zài zhuō zi shàng 。"
+      },
+      "answer": "C",
+      "explanation_ja": "上の位置関係を確認する。",
+      "tags": [
+        "location"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M1-R1-G1"
+    },
+    {
+      "id": "M1-39",
+      "mock_id": "M1",
+      "number": 39,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "我们坐火车去。",
+        "pinyin": "wǒ men zuò huǒ chē qù 。"
+      },
+      "answer": "B",
+      "explanation_ja": "交通手段は火车。",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M1-R1-G1"
+    },
+    {
+      "id": "M1-40",
+      "mock_id": "M1",
+      "number": 40,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "他喜欢打篮球。",
+        "pinyin": "tā xǐ huān dǎ lán qiú 。"
+      },
+      "answer": "D",
+      "explanation_ja": "打篮球はバスケットボールをする。",
+      "tags": [
+        "sport",
+        "action"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M1-R1-G1"
+    },
+    {
+      "id": "M1-41",
+      "mock_id": "M1",
+      "number": 41,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "他（　）看电视呢。",
+        "pinyin": "tā （　） kàn diàn shì ne 。"
+      },
+      "answer": "C",
+      "explanation_ja": "正在＋動詞＋呢で進行中の動作。",
+      "tags": [
+        "progressive"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M1-R2-G1"
+    },
+    {
+      "id": "M1-42",
+      "mock_id": "M1",
+      "number": 42,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "这杯水（　）那杯热。",
+        "pinyin": "zhè bēi shuǐ （　） nà bēi rè 。"
+      },
+      "answer": "E",
+      "explanation_ja": "A比B＋形容詞で比較する。",
+      "tags": [
+        "comparison"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M1-R2-G1"
+    },
+    {
+      "id": "M1-43",
+      "mock_id": "M1",
+      "number": 43,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "我不去，（　）我今天很忙。",
+        "pinyin": "wǒ bù qù ，（　） wǒ jīn tiān hěn máng 。"
+      },
+      "answer": "A",
+      "explanation_ja": "行かない理由を因为でつなぐ。",
+      "tags": [
+        "reason"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M1-R2-G1"
+    },
+    {
+      "id": "M1-44",
+      "mock_id": "M1",
+      "number": 44,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "这本书我已经看（　）了。",
+        "pinyin": "zhè běn shū wǒ yǐ jīng kàn （　） le 。"
+      },
+      "answer": "F",
+      "explanation_ja": "看完は読み終える。",
+      "tags": [
+        "result",
+        "completion"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M1-R2-G1"
+    },
+    {
+      "id": "M1-45",
+      "mock_id": "M1",
+      "number": 45,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "桌子上有（　）个杯子。",
+        "pinyin": "zhuō zi shàng yǒu （　） gè bēi zi 。"
+      },
+      "answer": "B",
+      "explanation_ja": "量詞个の前の2は两を使う。",
+      "tags": [
+        "number",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M1-R2-G1"
+    },
+    {
+      "id": "M1-46",
+      "mock_id": "M1",
+      "number": 46,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "小李每天六点起床，七点去学校。",
+        "pinyin": "xiǎo lǐ měi tiān liù diǎn qǐ chuáng ， qī diǎn qù xué xiào 。"
+      },
+      "answer": "F",
+      "explanation_ja": "7時は学校へ行く時間。起床は6時。",
+      "tags": [
+        "time",
+        "distractor"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "小李七点起床。",
+        "pinyin": "xiǎo lǐ qī diǎn qǐ chuáng 。"
+      }
+    },
+    {
+      "id": "M1-47",
+      "mock_id": "M1",
+      "number": 47,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "虽然我姐姐很忙，但是她每天都去学校工作。",
+        "pinyin": "suī rán wǒ jiě jiě hěn máng ， dàn shì tā měi tiān dōu qù xué xiào gōng zuò 。"
+      },
+      "answer": "T",
+      "explanation_ja": "虽然…但是…は逆接。忙しくても毎日学校で働く。工作と上班が対応する。",
+      "tags": [
+        "paraphrase",
+        "person",
+        "contrast"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "我姐姐每天都去学校上班。",
+        "pinyin": "wǒ jiě jiě měi tiān dōu qù xué xiào shàng bān 。"
+      }
+    },
+    {
+      "id": "M1-48",
+      "mock_id": "M1",
+      "number": 48,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "我想买这件衣服，但是钱不够。",
+        "pinyin": "wǒ xiǎng mǎi zhè jiàn yī fú ， dàn shì qián bù gòu 。"
+      },
+      "answer": "F",
+      "explanation_ja": "想买は希望。購入済みではない。",
+      "tags": [
+        "plan",
+        "completion"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "我已经买了这件衣服。",
+        "pinyin": "wǒ yǐ jīng mǎi le zhè jiàn yī fú 。"
+      }
+    },
+    {
+      "id": "M1-49",
+      "mock_id": "M1",
+      "number": 49,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "这家商店离我家很近，走路五分钟就到。",
+        "pinyin": "zhè jiā shāng diàn lí wǒ jiā hěn jìn ， zǒu lù wǔ fēn zhōng jiù dào 。"
+      },
+      "answer": "T",
+      "explanation_ja": "徒歩5分で着くという内容が一致する。",
+      "tags": [
+        "duration",
+        "location"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "从我家走到商店只要五分钟。",
+        "pinyin": "cóng wǒ jiā zǒu dào shāng diàn zhǐ yào wǔ fēn zhōng 。"
+      }
+    },
+    {
+      "id": "M1-50",
+      "mock_id": "M1",
+      "number": 50,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "昨天没下雨，今天下雨了。",
+        "pinyin": "zuó tiān méi xià yǔ ， jīn tiān xià yǔ le 。"
+      },
+      "answer": "F",
+      "explanation_ja": "昨天没下雨と都下雨は矛盾する。",
+      "tags": [
+        "negation",
+        "scope",
+        "weather"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "昨天和今天都下雨了。",
+        "pinyin": "zuó tiān hé jīn tiān dōu xià yǔ le 。"
+      }
+    },
+    {
+      "id": "M1-51",
+      "mock_id": "M1",
+      "number": 51,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "谢谢你帮我找到书。",
+        "pinyin": "xiè xiè nǐ bāng wǒ zhǎo dào shū 。"
+      },
+      "answer": "B",
+      "explanation_ja": "感謝への返答は不客气。",
+      "tags": [
+        "response"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G1"
+    },
+    {
+      "id": "M1-52",
+      "mock_id": "M1",
+      "number": 52,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你几点去上班？",
+        "pinyin": "nǐ jǐ diǎn qù shàng bān ？"
+      },
+      "answer": "C",
+      "explanation_ja": "几点には時刻で返答する。",
+      "tags": [
+        "question",
+        "time"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G1"
+    },
+    {
+      "id": "M1-53",
+      "mock_id": "M1",
+      "number": 53,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "我的猫在哪儿？",
+        "pinyin": "wǒ de māo zài nǎ ér ？"
+      },
+      "answer": "A",
+      "explanation_ja": "在哪儿には場所。",
+      "tags": [
+        "question",
+        "location"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G1"
+    },
+    {
+      "id": "M1-54",
+      "mock_id": "M1",
+      "number": 54,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你去商店做什么？",
+        "pinyin": "nǐ qù shāng diàn zuò shén me ？"
+      },
+      "answer": "E",
+      "explanation_ja": "買う目的が対応する。",
+      "tags": [
+        "question",
+        "purpose"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G1"
+    },
+    {
+      "id": "M1-55",
+      "mock_id": "M1",
+      "number": 55,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "认识你很高兴。",
+        "pinyin": "rèn shí nǐ hěn gāo xìng 。"
+      },
+      "answer": "D",
+      "explanation_ja": "初対面の挨拶に我也很高兴が対応。",
+      "tags": [
+        "response"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G1"
+    },
+    {
+      "id": "M1-56",
+      "mock_id": "M1",
+      "number": 56,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "请说慢一点儿。",
+        "pinyin": "qǐng shuō màn yì diǎn ér 。"
+      },
+      "answer": "C",
+      "explanation_ja": "聞き取りへの依頼に、もう一度言うと応じる。",
+      "tags": [
+        "request",
+        "response"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G2"
+    },
+    {
+      "id": "M1-57",
+      "mock_id": "M1",
+      "number": 57,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "这是谁的手机？",
+        "pinyin": "zhè shì shéi de shǒu jī ？"
+      },
+      "answer": "E",
+      "explanation_ja": "谁的は所有者を聞く。",
+      "tags": [
+        "question",
+        "ownership"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G2"
+    },
+    {
+      "id": "M1-58",
+      "mock_id": "M1",
+      "number": 58,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你今天怎么样？",
+        "pinyin": "nǐ jīn tiān zěn me yàng ？"
+      },
+      "answer": "A",
+      "explanation_ja": "体調・状態の返答が対応する。",
+      "tags": [
+        "question",
+        "health"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G2"
+    },
+    {
+      "id": "M1-59",
+      "mock_id": "M1",
+      "number": 59,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你怎么去医院？",
+        "pinyin": "nǐ zěn me qù yī yuàn ？"
+      },
+      "answer": "B",
+      "explanation_ja": "怎么去には交通手段。",
+      "tags": [
+        "question",
+        "transport"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G2"
+    },
+    {
+      "id": "M1-60",
+      "mock_id": "M1",
+      "number": 60,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "今天的事情都做完了吗？",
+        "pinyin": "jīn tiān de shì qíng dōu zuò wán le ma ？"
+      },
+      "answer": "D",
+      "explanation_ja": "完了の質問に还没做完と答える。",
+      "tags": [
+        "completion",
+        "not_yet"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M1-R4-G2"
+    },
+    {
+      "id": "M2-01",
+      "mock_id": "M2",
+      "number": 1,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "画像は2個。四个ではない。",
+      "tags": [
+        "number",
+        "food"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "apples2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这里有四个苹果。",
+              "pinyin": "zhè lǐ yǒu sì gè píng guǒ 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-02",
+      "mock_id": "M2",
+      "number": 2,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "青いカップなので、赤ではないという文に一致。",
+      "tags": [
+        "negation",
+        "color"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "cup_blue",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这不是红色的杯子。",
+              "pinyin": "zhè bú shì hóng sè de bēi zi 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-03",
+      "mock_id": "M2",
+      "number": 3,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "本は机の上にあるので、机の下という説明は一致しない。",
+      "tags": [
+        "location"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "book_on",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "我的书在桌子下面。",
+              "pinyin": "wǒ de shū zài zhuō zi xià miàn 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-04",
+      "mock_id": "M2",
+      "number": 4,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "時計は8時30分を示す。",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "clock830",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "现在八点半了。",
+              "pinyin": "xiàn zài bā diǎn bàn le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-05",
+      "mock_id": "M2",
+      "number": 5,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "晴れの画像。雪は描かれていない。",
+      "tags": [
+        "weather"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "sun",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "外面下雪了。",
+              "pinyin": "wài miàn xià xuě le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-06",
+      "mock_id": "M2",
+      "number": 6,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "画像はバス。一辆が乗り物の数え方。",
+      "tags": [
+        "transport",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "bus",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这是一辆公共汽车。",
+              "pinyin": "zhè shì yī liàng gōng gòng qì chē 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-07",
+      "mock_id": "M2",
+      "number": 7,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "画像は犬。猫と犬を区別する。",
+      "tags": [
+        "animal"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "dog",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这是我的小猫。",
+              "pinyin": "zhè shì wǒ de xiǎo māo 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-08",
+      "mock_id": "M2",
+      "number": 8,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "画像はスカート。条は裙子と結び付く。",
+      "tags": [
+        "clothes",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "skirt",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这条裙子很漂亮。",
+              "pinyin": "zhè tiáo qún zi hěn piào liàng 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-09",
+      "mock_id": "M2",
+      "number": 9,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "人物は泳いでいる。跑步は走ること。",
+      "tags": [
+        "action",
+        "progressive"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "swimming",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "他正在跑步。",
+              "pinyin": "tā zhèng zài pǎo bù 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-10",
+      "mock_id": "M2",
+      "number": 10,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "白い牛乳の入ったグラス。",
+      "tags": [
+        "food",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "milk",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这是一杯牛奶。",
+              "pinyin": "zhè shì yī bēi niú nǎi 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-11",
+      "mock_id": "M2",
+      "number": 11,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "E",
+      "explanation_ja": "七点半を示す時計を選ぶ。",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "现在几点？",
+              "pinyin": "xiàn zài jǐ diǎn ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "七点半，我们该走了。",
+              "pinyin": "qī diǎn bàn ， wǒ men gāi zǒu le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-12",
+      "mock_id": "M2",
+      "number": 12,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "D",
+      "explanation_ja": "件衣服と買う場面からシャツ。",
+      "tags": [
+        "clothes",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "这件衣服怎么样？",
+              "pinyin": "zhè jiàn yī fú zěn me yàng ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不错，我买这件。",
+              "pinyin": "bù cuò ， wǒ mǎi zhè jiàn 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-13",
+      "mock_id": "M2",
+      "number": 13,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "卵を2個という具体的な数量。",
+      "tags": [
+        "food",
+        "number"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你想吃几个鸡蛋？",
+              "pinyin": "nǐ xiǎng chī jǐ gè jī dàn ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "两个就可以了。",
+              "pinyin": "liǎng gè jiù kě yǐ le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-14",
+      "mock_id": "M2",
+      "number": 14,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "選ぶ交通手段は飞机。",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "去北京坐什么？",
+              "pinyin": "qù běi jīng zuò shén me ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "坐飞机，比较快。",
+              "pinyin": "zuò fēi jī ， bǐ jiào kuài 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-15",
+      "mock_id": "M2",
+      "number": 15,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "打篮球からバスケットボール。",
+      "tags": [
+        "sport"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你喜欢什么运动？",
+              "pinyin": "nǐ xǐ huān shén me yùn dòng ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我喜欢打篮球。",
+              "pinyin": "wǒ xǐ huān dǎ lán qiú 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-16",
+      "mock_id": "M2",
+      "number": 16,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "否定された咖啡ではなく茶。",
+      "tags": [
+        "negation",
+        "food"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "喝点儿什么？",
+              "pinyin": "hē diǎn ér shén me ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "茶吧，我不想喝咖啡。",
+              "pinyin": "chá ba ， wǒ bù xiǎng hē kā fēi 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-17",
+      "mock_id": "M2",
+      "number": 17,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "还在下雨で雨が続いている。",
+      "tags": [
+        "weather",
+        "prohibition"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "外面天气怎么样？",
+              "pinyin": "wài miàn tiān qì zěn me yàng ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "还在下雨，别出去了。",
+              "pinyin": "hái zài xià yǔ ， bié chū qù le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-18",
+      "mock_id": "M2",
+      "number": 18,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "D",
+      "explanation_ja": "毎朝の運動は跑步。",
+      "tags": [
+        "frequency",
+        "sport"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你每天早上做什么运动？",
+              "pinyin": "nǐ měi tiān zǎo shàng zuò shén me yùn dòng ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我每天跑步。",
+              "pinyin": "wǒ měi tiān pǎo bù 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-19",
+      "mock_id": "M2",
+      "number": 19,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "看书を否定して看报纸と訂正。",
+      "tags": [
+        "negation",
+        "action"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你在看书吗？",
+              "pinyin": "nǐ zài kàn shū ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不是，我在看报纸。",
+              "pinyin": "bú shì ， wǒ zài kàn bào zhǐ 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-20",
+      "mock_id": "M2",
+      "number": 20,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "E",
+      "explanation_ja": "打电话が電話の画像と対応する。",
+      "tags": [
+        "action",
+        "object"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M2-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你怎么告诉老师这件事？",
+              "pinyin": "nǐ zěn me gào sù lǎo shī zhè jiàn shì ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我给他打电话。",
+              "pinyin": "wǒ gěi tā dǎ diàn huà 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-21",
+      "mock_id": "M2",
+      "number": 21,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "今日は行かず明日行く。否定後の予定を取る。",
+      "tags": [
+        "negation",
+        "plan"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "明天",
+            "pinyin": "míng tiān"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "今天",
+            "pinyin": "jīn tiān"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "昨天",
+            "pinyin": "zuó tiān"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你今天去游泳吗？",
+              "pinyin": "nǐ jīn tiān qù yóu yǒng ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "今天不去，明天去。",
+              "pinyin": "jīn tiān bù qù ， míng tiān qù 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的哪天去游泳？",
+              "pinyin": "nán de nǎ tiān qù yóu yǒng ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-22",
+      "mock_id": "M2",
+      "number": 22,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "苹果の単価は3元。スイカの値段は不要。",
+      "tags": [
+        "money",
+        "distractor"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "五块",
+            "pinyin": "wǔ kuài"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "十五块",
+            "pinyin": "shí wǔ kuài"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "三块",
+            "pinyin": "sān kuài"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "这个苹果多少钱？",
+              "pinyin": "zhè ge píng guǒ duō shǎo qián ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "三块，一个西瓜十五块。",
+              "pinyin": "sān kuài ， yí gè xī guā shí wǔ kuài 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "一个苹果多少钱？",
+              "pinyin": "yí gè píng guǒ duō shǎo qián ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-23",
+      "mock_id": "M2",
+      "number": 23,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "本人も含めて3人。",
+      "tags": [
+        "number",
+        "family"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "五个人",
+            "pinyin": "wǔ gè rén"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "三个人",
+            "pinyin": "sān gè rén"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "四个人",
+            "pinyin": "sì gè rén"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你家有几个人？",
+              "pinyin": "nǐ jiā yǒu jǐ gè rén ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "爸爸、妈妈和我，三个人。",
+              "pinyin": "bà bà 、 mā mā hé wǒ ， sān gè rén 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的家有几个人？",
+              "pinyin": "nán de jiā yǒu jǐ gè rén ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-24",
+      "mock_id": "M2",
+      "number": 24,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "運転能力ではなく今日の移動方法を聞いている。",
+      "tags": [
+        "ability",
+        "transport"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "走路",
+            "pinyin": "zǒu lù"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "开车",
+            "pinyin": "kāi chē"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "坐飞机",
+            "pinyin": "zuò fēi jī"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你会开车吗？",
+              "pinyin": "nǐ huì kāi chē ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "会，但是今天我想走路去。",
+              "pinyin": "huì ， dàn shì jīn tiān wǒ xiǎng zǒu lù qù 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的今天怎么去？",
+              "pinyin": "nán de jīn tiān zěn me qù ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-25",
+      "mock_id": "M2",
+      "number": 25,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "左が本人、右が同級生の本。",
+      "tags": [
+        "location",
+        "ownership"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "中间",
+            "pinyin": "zhōng jiān"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "右边",
+            "pinyin": "yòu biān"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "左边",
+            "pinyin": "zuǒ biān"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你的书是哪本？",
+              "pinyin": "nǐ de shū shì nǎ běn ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "左边那本，右边的是我同学的。",
+              "pinyin": "zuǒ biān nà běn ， yòu biān de shì wǒ tóng xué de 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的书在哪儿？",
+              "pinyin": "nán de shū zài nǎ ér ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-26",
+      "mock_id": "M2",
+      "number": 26,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "理由として明示された菜很便宜を選ぶ。",
+      "tags": [
+        "reason",
+        "money"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "离家近",
+            "pinyin": "lí jiā jìn"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "菜便宜",
+            "pinyin": "cài pián yi"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "人很少",
+            "pinyin": "rén hěn shǎo"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你为什么喜欢这家饭店？",
+              "pinyin": "nǐ wèi shén me xǐ huān zhè jiā fàn diàn ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "因为这里的菜很便宜。",
+              "pinyin": "yīn wèi zhè lǐ de cài hěn pián yi 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的为什么喜欢这家饭店？",
+              "pinyin": "nán de wèi shén me xǐ huān zhè jiā fàn diàn ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-27",
+      "mock_id": "M2",
+      "number": 27,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "每天の習慣ではなく昨天の時刻。",
+      "tags": [
+        "time",
+        "habit",
+        "distractor"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "十点",
+            "pinyin": "shí diǎn"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "十一点",
+            "pinyin": "shí yì diǎn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "十二点",
+            "pinyin": "shí èr diǎn"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你每天几点睡觉？",
+              "pinyin": "nǐ měi tiān jǐ diǎn shuì jiào ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "一般十点，可是昨天十一点才睡。",
+              "pinyin": "yì bān shí diǎn ， kě shì zuó tiān shí yì diǎn cái shuì 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的昨天几点睡觉？",
+              "pinyin": "nán de zuó tiān jǐ diǎn shuì jiào ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-28",
+      "mock_id": "M2",
+      "number": 28,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "職業は医生、勤務先は医院。",
+      "tags": [
+        "person",
+        "place"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "医院",
+            "pinyin": "yī yuàn"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "商店",
+            "pinyin": "shāng diàn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "学校",
+            "pinyin": "xué xiào"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你姐姐在哪儿工作？",
+              "pinyin": "nǐ jiě jiě zài nǎ ér gōng zuò ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "她是医生，在医院工作。",
+              "pinyin": "tā shì yī shēng ， zài yī yuàn gōng zuò 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "姐姐在哪儿工作？",
+              "pinyin": "jiě jiě zài nǎ ér gōng zuò ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-29",
+      "mock_id": "M2",
+      "number": 29,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "旁边は隣。名詞だけでなく位置関係まで取る。",
+      "tags": [
+        "location"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "门后面",
+            "pinyin": "mén hòu miàn"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "桌子下面",
+            "pinyin": "zhuō zi xià miàn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "电脑旁边",
+            "pinyin": "diàn nǎo páng biān"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你看见我的杯子了吗？",
+              "pinyin": "nǐ kàn jiàn wǒ de bēi zi le ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "看见了，在电脑旁边。",
+              "pinyin": "kàn jiàn le ， zài diàn nǎo páng biān 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "杯子在哪儿？",
+              "pinyin": "bēi zi zài nǎ ér ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-30",
+      "mock_id": "M2",
+      "number": 30,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "还没が未完了。これから先に書き終える予定。",
+      "tags": [
+        "not_yet",
+        "completion"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "正在吃",
+            "pinyin": "zhèng zài chī"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "还没吃",
+            "pinyin": "hái méi chī"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "吃了",
+            "pinyin": "chī le"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你吃过午饭了吗？",
+              "pinyin": "nǐ chī guò wǔ fàn le ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "还没呢，我要先写完。",
+              "pinyin": "hái méi ne ， wǒ yào xiān xiě wán 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的吃午饭了吗？",
+              "pinyin": "nán de chī wǔ fàn le ma ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-31",
+      "mock_id": "M2",
+      "number": 31,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "火車という問いを否定し、機票を買ったと答える。",
+      "tags": [
+        "negation",
+        "transport"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "坐火车",
+            "pinyin": "zuò huǒ chē"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "坐飞机",
+            "pinyin": "zuò fēi jī"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "坐汽车",
+            "pinyin": "zuò qì chē"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你什么时候去上海？",
+              "pinyin": "nǐ shén me shí hòu qù shàng hǎi ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "星期三。",
+              "pinyin": "xīng qī sān 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "坐火车吗？",
+              "pinyin": "zuò huǒ chē ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不，我买了飞机票。",
+              "pinyin": "bù ， wǒ mǎi le fēi jī piào 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的怎么去上海？",
+              "pinyin": "nán de zěn me qù shàng hǎi ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-32",
+      "mock_id": "M2",
+      "number": 32,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "兄22歳より2歳下なので本人20歳。",
+      "tags": [
+        "comparison",
+        "calculation"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "二十四岁",
+            "pinyin": "èr shí sì suì"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "二十岁",
+            "pinyin": "èr shí suì"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "二十二岁",
+            "pinyin": "èr shí èr suì"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你哥哥比你高吗？",
+              "pinyin": "nǐ gē gē bǐ nǐ gāo ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "对，他比我高。",
+              "pinyin": "duì ， tā bǐ wǒ gāo 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "他今年多大？",
+              "pinyin": "tā jīn nián duō dà ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "二十二岁，比我大两岁。",
+              "pinyin": "èr shí èr suì ， bǐ wǒ dà liǎng suì 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的今年多大？",
+              "pinyin": "nán de jīn nián duō dà ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-33",
+      "mock_id": "M2",
+      "number": 33,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "3時は空く時間、約束は4時。",
+      "tags": [
+        "time",
+        "plan"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "四点",
+            "pinyin": "sì diǎn"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "三点",
+            "pinyin": "sān diǎn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "五点",
+            "pinyin": "wǔ diǎn"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "今天下午有时间吗？",
+              "pinyin": "jīn tiān xià wǔ yǒu shí jiān ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "三点以后有。",
+              "pinyin": "sān diǎn yǐ hòu yǒu 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "那我们四点见，好吗？",
+              "pinyin": "nà wǒ men sì diǎn jiàn ， hǎo ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "好，学校门口见。",
+              "pinyin": "hǎo ， xué xiào mén kǒu jiàn 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "他们几点见面？",
+              "pinyin": "tā men jǐ diǎn jiàn miàn ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-34",
+      "mock_id": "M2",
+      "number": 34,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "頭痛から医院へ行くと決めている。",
+      "tags": [
+        "health",
+        "plan"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "饭店",
+            "pinyin": "fàn diàn"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "医院",
+            "pinyin": "yī yuàn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "学校",
+            "pinyin": "xué xiào"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你怎么了？",
+              "pinyin": "nǐ zěn me le ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "头有点儿疼。",
+              "pinyin": "tóu yǒu diǎn ér téng 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "去医院看看吧。",
+              "pinyin": "qù yī yuàn kàn kàn ba 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "好，我现在就去。",
+              "pinyin": "hǎo ， wǒ xiàn zài jiù qù 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的准备去哪儿？",
+              "pinyin": "nán de zhǔn bèi qù nǎ ér ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-35",
+      "mock_id": "M2",
+      "number": 35,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "価格情報に引かれず最終選択の白色を取る。",
+      "tags": [
+        "color",
+        "preference"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "黑色",
+            "pinyin": "hēi sè"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "白色",
+            "pinyin": "bái sè"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "红色",
+            "pinyin": "hóng sè"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "这两件衣服你喜欢哪件？",
+              "pinyin": "zhè liǎng jiàn yī fú nǐ xǐ huān nǎ jiàn ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "白色的。",
+              "pinyin": "bái sè de 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "黑色的便宜十块。",
+              "pinyin": "hēi sè de pián yi shí kuài 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "可是我更喜欢白色的，就买白色的吧。",
+              "pinyin": "kě shì wǒ gèng xǐ huān bái sè de ， jiù mǎi bái sè de ba 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的要买什么颜色的衣服？",
+              "pinyin": "nán de yào mǎi shén me yán sè de yī fú ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M2-36",
+      "mock_id": "M2",
+      "number": 36,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "书不在桌子上，在桌子下面。",
+        "pinyin": "shū bù zài zhuō zi shàng ， zài zhuō zi xià miàn 。"
+      },
+      "answer": "E",
+      "explanation_ja": "前半の否定と後半の訂正を読む。",
+      "tags": [
+        "location",
+        "negation"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M2-R1-G1"
+    },
+    {
+      "id": "M2-37",
+      "mock_id": "M2",
+      "number": 37,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "这双鞋是新的。",
+        "pinyin": "zhè shuāng xié shì xīn de 。"
+      },
+      "answer": "D",
+      "explanation_ja": "双鞋に対応する靴の画像。",
+      "tags": [
+        "clothes",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M2-R1-G1"
+    },
+    {
+      "id": "M2-38",
+      "mock_id": "M2",
+      "number": 38,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "天气冷，下雪了。",
+        "pinyin": "tiān qì lěng ， xià xuě le 。"
+      },
+      "answer": "C",
+      "explanation_ja": "寒いという感想に加え、雪を確認する。",
+      "tags": [
+        "weather"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M2-R1-G1"
+    },
+    {
+      "id": "M2-39",
+      "mock_id": "M2",
+      "number": 39,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "这条鱼很大。",
+        "pinyin": "zhè tiáo yú hěn dà 。"
+      },
+      "answer": "B",
+      "explanation_ja": "魚の画像を選ぶ。条は魚にも使う。",
+      "tags": [
+        "food",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M2-R1-G1"
+    },
+    {
+      "id": "M2-40",
+      "mock_id": "M2",
+      "number": 40,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "我用电脑工作。",
+        "pinyin": "wǒ yòng diàn nǎo gōng zuò 。"
+      },
+      "answer": "A",
+      "explanation_ja": "电脑を使うためパソコンの画像。",
+      "tags": [
+        "object",
+        "action"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M2-R1-G1"
+    },
+    {
+      "id": "M2-41",
+      "mock_id": "M2",
+      "number": 41,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "我家（　）学校很近。",
+        "pinyin": "wǒ jiā （　） xué xiào hěn jìn 。"
+      },
+      "answer": "C",
+      "explanation_ja": "A离B很近で距離を表す。",
+      "tags": [
+        "location",
+        "distance"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M2-R2-G1"
+    },
+    {
+      "id": "M2-42",
+      "mock_id": "M2",
+      "number": 42,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "我去（　）一次北京。",
+        "pinyin": "wǒ qù （　） yī cì běi jīng 。"
+      },
+      "answer": "E",
+      "explanation_ja": "去过で過去の経験。一次は回数。",
+      "tags": [
+        "experience"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M2-R2-G1"
+    },
+    {
+      "id": "M2-43",
+      "mock_id": "M2",
+      "number": 43,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "她唱歌唱（　）很好。",
+        "pinyin": "tā chàng gē chàng （　） hěn hǎo 。"
+      },
+      "answer": "A",
+      "explanation_ja": "動詞＋得＋評価で歌い方を述べる。",
+      "tags": [
+        "degree_complement"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M2-R2-G1"
+    },
+    {
+      "id": "M2-44",
+      "mock_id": "M2",
+      "number": 44,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "今天下雨，（　）我们不去跑步。",
+        "pinyin": "jīn tiān xià yǔ ，（　） wǒ men bù qù pǎo bù 。"
+      },
+      "answer": "F",
+      "explanation_ja": "原因から結果をつなぐ所以。",
+      "tags": [
+        "reason"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M2-R2-G1"
+    },
+    {
+      "id": "M2-45",
+      "mock_id": "M2",
+      "number": 45,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "这里有人睡觉，请（　）说话。",
+        "pinyin": "zhè lǐ yǒu rén shuì jiào ， qǐng （　） shuō huà 。"
+      },
+      "answer": "B",
+      "explanation_ja": "别＋動詞はするな・しないで。",
+      "tags": [
+        "prohibition"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M2-R2-G1"
+    },
+    {
+      "id": "M2-46",
+      "mock_id": "M2",
+      "number": 46,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "小张比小王大两岁。小王十八岁。",
+        "pinyin": "xiǎo zhāng bǐ xiǎo wáng dà liǎng suì 。 xiǎo wáng shí bā suì 。"
+      },
+      "answer": "T",
+      "explanation_ja": "18歳より2歳上なので20歳。",
+      "tags": [
+        "comparison",
+        "calculation"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "小张二十岁。",
+        "pinyin": "xiǎo zhāng èr shí suì 。"
+      }
+    },
+    {
+      "id": "M2-47",
+      "mock_id": "M2",
+      "number": 47,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "我已经吃完了，你慢慢吃吧。",
+        "pinyin": "wǒ yǐ jīng chī wán le ， nǐ màn màn chī ba 。"
+      },
+      "answer": "F",
+      "explanation_ja": "已经吃完と还没吃完は反対。",
+      "tags": [
+        "completion",
+        "not_yet"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "我还没吃完。",
+        "pinyin": "wǒ hái méi chī wán 。"
+      }
+    },
+    {
+      "id": "M2-48",
+      "mock_id": "M2",
+      "number": 48,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "今天上午我在家，下午去学校。",
+        "pinyin": "jīn tiān shàng wǔ wǒ zài jiā ， xià wǔ qù xué xiào 。"
+      },
+      "answer": "F",
+      "explanation_ja": "午後は学校へ行く。一天都という全称が誤り。",
+      "tags": [
+        "scope",
+        "time"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "我今天一天都在家。",
+        "pinyin": "wǒ jīn tiān yī tiān dōu zài jiā 。"
+      }
+    },
+    {
+      "id": "M2-49",
+      "mock_id": "M2",
+      "number": 49,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "我妹妹会游泳，也会打篮球。",
+        "pinyin": "wǒ mèi mèi huì yóu yǒng ， yě huì dǎ lán qiú 。"
+      },
+      "answer": "F",
+      "explanation_ja": "泳げるという能力は分かるが、毎日泳ぐとは書かれていない。本文の根拠がない。",
+      "tags": [
+        "ability",
+        "scope",
+        "unsupported"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "我妹妹每天都游泳。",
+        "pinyin": "wǒ mèi mèi měi tiān dōu yóu yǒng 。"
+      }
+    },
+    {
+      "id": "M2-50",
+      "mock_id": "M2",
+      "number": 50,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "这件衣服太小了，我想买大一点儿的。",
+        "pinyin": "zhè jiàn yī fú tài xiǎo le ， wǒ xiǎng mǎi dà yī diǎn ér de 。"
+      },
+      "answer": "T",
+      "explanation_ja": "今の服は小さく、より大きな服を望んでいる。",
+      "tags": [
+        "comparison",
+        "preference"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "我想买大一点儿的衣服。",
+        "pinyin": "wǒ xiǎng mǎi dà yī diǎn ér de yī fú 。"
+      }
+    },
+    {
+      "id": "M2-51",
+      "mock_id": "M2",
+      "number": 51,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你要几杯水？",
+        "pinyin": "nǐ yào jǐ bēi shuǐ ？"
+      },
+      "answer": "D",
+      "explanation_ja": "几杯には杯数で答える。",
+      "tags": [
+        "question",
+        "classifier"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G1"
+    },
+    {
+      "id": "M2-52",
+      "mock_id": "M2",
+      "number": 52,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "这是你家谁的照片？",
+        "pinyin": "zhè shì nǐ jiā shéi de zhào piān ？"
+      },
+      "answer": "A",
+      "explanation_ja": "人物の質問に弟弟と対応する。",
+      "tags": [
+        "question",
+        "person"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G1"
+    },
+    {
+      "id": "M2-53",
+      "mock_id": "M2",
+      "number": 53,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "爸爸到家了吗？",
+        "pinyin": "bà bà dào jiā le ma ？"
+      },
+      "answer": "C",
+      "explanation_ja": "到家了吗に还没。移動中という補足も一致。",
+      "tags": [
+        "not_yet",
+        "response"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G1"
+    },
+    {
+      "id": "M2-54",
+      "mock_id": "M2",
+      "number": 54,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "我先回家了，再见。",
+        "pinyin": "wǒ xiān huí jiā le ， zài jiàn 。"
+      },
+      "answer": "B",
+      "explanation_ja": "別れの挨拶に慢走が対応する。",
+      "tags": [
+        "response"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G1"
+    },
+    {
+      "id": "M2-55",
+      "mock_id": "M2",
+      "number": 55,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你明白我的意思了吗？",
+        "pinyin": "nǐ míng bái wǒ de yì si le ma ？"
+      },
+      "answer": "E",
+      "explanation_ja": "理解したかという質問に聞き取れなかったと答える。",
+      "tags": [
+        "request",
+        "response"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G1"
+    },
+    {
+      "id": "M2-56",
+      "mock_id": "M2",
+      "number": 56,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "我可以坐这儿吗？",
+        "pinyin": "wǒ kě yǐ zuò zhè ér ma ？"
+      },
+      "answer": "E",
+      "explanation_ja": "許可の問いに可以と答える。",
+      "tags": [
+        "permission"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G2"
+    },
+    {
+      "id": "M2-57",
+      "mock_id": "M2",
+      "number": 57,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你为什么这么早起床？",
+        "pinyin": "nǐ wèi shén me zhè me zǎo qǐ chuáng ？"
+      },
+      "answer": "A",
+      "explanation_ja": "为什么には因为で理由。",
+      "tags": [
+        "question",
+        "reason"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G2"
+    },
+    {
+      "id": "M2-58",
+      "mock_id": "M2",
+      "number": 58,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你是什么时候买的手机？",
+        "pinyin": "nǐ shì shén me shí hòu mǎi de shǒu jī ？"
+      },
+      "answer": "C",
+      "explanation_ja": "是…的で購入時点を尋ね、昨日と返す。",
+      "tags": [
+        "shi_de",
+        "time"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G2"
+    },
+    {
+      "id": "M2-59",
+      "mock_id": "M2",
+      "number": 59,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "学校离这里远吗？",
+        "pinyin": "xué xiào lí zhè lǐ yuǎn ma ？"
+      },
+      "answer": "B",
+      "explanation_ja": "距離の質問に不远と徒歩時間。",
+      "tags": [
+        "distance",
+        "question"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G2"
+    },
+    {
+      "id": "M2-60",
+      "mock_id": "M2",
+      "number": 60,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "明天去踢足球，怎么样？",
+        "pinyin": "míng tiān qù tī zú qiú ， zěn me yàng ？"
+      },
+      "answer": "D",
+      "explanation_ja": "誘いに一緒に行こうと応じる。",
+      "tags": [
+        "suggestion",
+        "response"
+      ],
+      "difficulty": 1,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M2-R4-G2"
+    },
+    {
+      "id": "M3-01",
+      "mock_id": "M3",
+      "number": 1,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "赤いので白ではないという否定文は正しい。",
+      "tags": [
+        "color",
+        "negation"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "cup_red",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这个杯子不是白色的。",
+              "pinyin": "zhè ge bēi zi bú shì bái sè de 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-02",
+      "mock_id": "M3",
+      "number": 2,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "3個あるため只有两个と矛盾する。",
+      "tags": [
+        "number",
+        "scope"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "apples3",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这儿只有两个苹果。",
+              "pinyin": "zhè ér zhǐ yǒu liǎng gè píng guǒ 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-03",
+      "mock_id": "M3",
+      "number": 3,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "本は机の下。机の上にはない。",
+      "tags": [
+        "location",
+        "negation"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "book_under",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "桌子上没有书。",
+              "pinyin": "zhuō zi shàng méi yǒu shū 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-04",
+      "mock_id": "M3",
+      "number": 4,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "時計は7時30分で8時30分ではない。",
+      "tags": [
+        "time"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "clock730",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "已经八点半了。",
+              "pinyin": "yǐ jīng bā diǎn bàn le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-05",
+      "mock_id": "M3",
+      "number": 5,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "雪の画像で正在下雪に一致。",
+      "tags": [
+        "weather",
+        "progressive"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "snow",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "外面正在下雪。",
+              "pinyin": "wài miàn zhèng zài xià xuě 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-06",
+      "mock_id": "M3",
+      "number": 6,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "画像は自転車。出租车はタクシー。",
+      "tags": [
+        "transport"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "bicycle",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这是一辆出租车。",
+              "pinyin": "zhè shì yī liàng chū zū chē 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-07",
+      "mock_id": "M3",
+      "number": 7,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "在…呢は進行。人物が走っている。",
+      "tags": [
+        "progressive",
+        "action"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "running",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "他在跑步呢。",
+              "pinyin": "tā zài pǎo bù ne 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-08",
+      "mock_id": "M3",
+      "number": 8,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "画像はシャツ。双鞋とは一致しない。",
+      "tags": [
+        "clothes",
+        "classifier"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "shirt",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这是一双鞋。",
+              "pinyin": "zhè shì yī shuāng xié 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-09",
+      "mock_id": "M3",
+      "number": 9,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "T",
+      "explanation_ja": "卵の数は2個。",
+      "tags": [
+        "number",
+        "food"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "eggs2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这里有两个鸡蛋。",
+              "pinyin": "zhè lǐ yǒu liǎng gè jī dàn 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-10",
+      "mock_id": "M3",
+      "number": 10,
+      "section": "listening",
+      "part": "L1",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "F",
+      "explanation_ja": "画像は犬なので猫ではない。",
+      "tags": [
+        "animal"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_true_false",
+      "asset_id": "dog",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这是一只猫。",
+              "pinyin": "zhè shì yī zhī māo 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-11",
+      "mock_id": "M3",
+      "number": 11,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "D",
+      "explanation_ja": "肯定された坐火车が通学手段。",
+      "tags": [
+        "transport",
+        "frequency"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "去学校坐火车吗？",
+              "pinyin": "qù xué xiào zuò huǒ chē ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "对，我每天都坐。",
+              "pinyin": "duì ， wǒ měi tiān dōu zuò 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-12",
+      "mock_id": "M3",
+      "number": 12,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "找到は見つけた。場所は桌子上。",
+      "tags": [
+        "result",
+        "location"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "书找到了吗？",
+              "pinyin": "shū zhǎo dào le ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "找到了，就在桌子上。",
+              "pinyin": "zhǎo dào le ， jiù zài zhuō zi shàng 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-13",
+      "mock_id": "M3",
+      "number": 13,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "E",
+      "explanation_ja": "伝達方法は電話。",
+      "tags": [
+        "plan",
+        "action"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你怎么给朋友说这件事？",
+              "pinyin": "nǐ zěn me gěi péng yǒu shuō zhè jiàn shì ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我想给他打个电话。",
+              "pinyin": "wǒ xiǎng gěi tā dǎ gè diàn huà 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-14",
+      "mock_id": "M3",
+      "number": 14,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "只喝牛奶が選択を限定する。",
+      "tags": [
+        "scope",
+        "negation",
+        "food"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你早上喝茶吗？",
+              "pinyin": "nǐ zǎo shàng hē chá ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不喝，我只喝牛奶。",
+              "pinyin": "bù hē ， wǒ zhǐ hē niú nǎi 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-15",
+      "mock_id": "M3",
+      "number": 15,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "誘いの内容は游泳。天気ではなく活動を選ぶ。",
+      "tags": [
+        "suggestion",
+        "sport"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G1",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "我们去游泳吧。",
+              "pinyin": "wǒ men qù yóu yǒng ba 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "好，今天很热。",
+              "pinyin": "hǎo ， jīn tiān hěn rè 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-16",
+      "mock_id": "M3",
+      "number": 16,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "E",
+      "explanation_ja": "否定の後の那条裙子が購入対象。",
+      "tags": [
+        "negation",
+        "clothes"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你要这件衣服吗？",
+              "pinyin": "nǐ yào zhè jiàn yī fú ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不，我要旁边那条裙子。",
+              "pinyin": "bù ， wǒ yào páng biān nà tiáo qún zi 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-17",
+      "mock_id": "M3",
+      "number": 17,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "D",
+      "explanation_ja": "下雨が雨の画像に対応する。又は再発。",
+      "tags": [
+        "weather",
+        "again"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你听，外面怎么了？",
+              "pinyin": "nǐ tīng ， wài miàn zěn me le ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "又下雨了。",
+              "pinyin": "yòu xià yǔ le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-18",
+      "mock_id": "M3",
+      "number": 18,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "学習道具は电脑。",
+      "tags": [
+        "object",
+        "ability"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你在用什么学习汉语？",
+              "pinyin": "nǐ zài yòng shén me xué xí hàn yǔ ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "用电脑，可以听，也可以看。",
+              "pinyin": "yòng diàn nǎo ， kě yǐ tīng ， yě kě yǐ kàn 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-19",
+      "mock_id": "M3",
+      "number": 19,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "米饭を肯定。已经做好了は準備完了。",
+      "tags": [
+        "food",
+        "completion"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "今天吃米饭吗？",
+              "pinyin": "jīn tiān chī mǐ fàn ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "吃，我已经做好了。",
+              "pinyin": "chī ， wǒ yǐ jīng zuò hǎo le 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-20",
+      "mock_id": "M3",
+      "number": 20,
+      "section": "listening",
+      "part": "L2",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "放学以后は時、活動は打篮球。",
+      "tags": [
+        "time",
+        "sport"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "image_match",
+      "group_id": "M3-L2-G2",
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "放学以后去打篮球吧。",
+              "pinyin": "fàng xué yǐ hòu qù dǎ lán qiú ba 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "好，我也想运动一下。",
+              "pinyin": "hǎo ， wǒ yě xiǎng yùn dòng yī xià 。"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-21",
+      "mock_id": "M3",
+      "number": 21,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "最初の9時を否定し9時半に訂正。",
+      "tags": [
+        "time",
+        "correction"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "十点半",
+            "pinyin": "shí diǎn bàn"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "九点半",
+            "pinyin": "jiǔ diǎn bàn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "九点",
+            "pinyin": "jiǔ diǎn"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "我们九点开始吗？",
+              "pinyin": "wǒ men jiǔ diǎn kāi shǐ ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不是，九点半开始。",
+              "pinyin": "bú shì ， jiǔ diǎn bàn kāi shǐ 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "几点开始？",
+              "pinyin": "jǐ diǎn kāi shǐ ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-22",
+      "mock_id": "M3",
+      "number": 22,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "聞かれたのは数量3斤。合計金額の計算は不要。",
+      "tags": [
+        "number",
+        "distractor"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "三斤",
+            "pinyin": "sān jīn"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "十二斤",
+            "pinyin": "shí èr jīn"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "四斤",
+            "pinyin": "sì jīn"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你想买多少苹果？",
+              "pinyin": "nǐ xiǎng mǎi duō shǎo píng guǒ ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "三斤，一斤四块钱。",
+              "pinyin": "sān jīn ， yī jīn sì kuài qián 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的想买几斤苹果？",
+              "pinyin": "nán de xiǎng mǎi jǐ jīn píng guǒ ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-23",
+      "mock_id": "M3",
+      "number": 23,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "今日はもっと忙しいという問いを否定。",
+      "tags": [
+        "comparison",
+        "negation"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "今天",
+            "pinyin": "jīn tiān"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "昨天",
+            "pinyin": "zuó tiān"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "一样忙",
+            "pinyin": "yī yàng máng"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你今天比昨天忙吗？",
+              "pinyin": "nǐ jīn tiān bǐ zuó tiān máng ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不，昨天更忙。",
+              "pinyin": "bù ， zuó tiān gèng máng 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "哪天更忙？",
+              "pinyin": "nǎ tiān gèng máng ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-24",
+      "mock_id": "M3",
+      "number": 24,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "来た後で門の外にいる。",
+      "tags": [
+        "location",
+        "progressive"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "门外",
+            "pinyin": "mén wài"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "家里",
+            "pinyin": "jiā lǐ"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "学校里面",
+            "pinyin": "xué xiào lǐ miàn"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "小李来了吗？",
+              "pinyin": "xiǎo lǐ lái le ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "来了，正在门外等你。",
+              "pinyin": "lái le ， zhèng zài mén wài děng nǐ 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "小李现在在哪儿？",
+              "pinyin": "xiǎo lǐ xiàn zài zài nǎ ér ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-25",
+      "mock_id": "M3",
+      "number": 25,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "A",
+      "explanation_ja": "不太难はあまり難しくない。完了情報は補助。",
+      "tags": [
+        "degree",
+        "negation"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "不太难",
+            "pinyin": "bù tài nán"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "太多",
+            "pinyin": "tài duō"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "很难",
+            "pinyin": "hěn nán"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你觉得这道题难吗？",
+              "pinyin": "nǐ jué de zhè dào tí nán ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不太难，我已经做完了。",
+              "pinyin": "bù tài nán ， wǒ yǐ jīng zuò wán le 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的觉得题怎么样？",
+              "pinyin": "nán de jué de tí zěn me yàng ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-26",
+      "mock_id": "M3",
+      "number": 26,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "行った目的は买菜。帰宅予定と区別。",
+      "tags": [
+        "purpose",
+        "person"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "看病",
+            "pinyin": "kàn bìng"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "上课",
+            "pinyin": "shàng kè"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "买菜",
+            "pinyin": "mǎi cài"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你妈妈为什么不在家？",
+              "pinyin": "nǐ mā mā wèi shén me bù zài jiā ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "她去买菜了，一会儿就回来。",
+              "pinyin": "tā qù mǎi cài le ， yī huì er jiù huí lái 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "妈妈去做什么了？",
+              "pinyin": "mā mā qù zuò shén me le ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-27",
+      "mock_id": "M3",
+      "number": 27,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "是…的で移動方法を訂正する。",
+      "tags": [
+        "shi_de",
+        "transport"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "走路",
+            "pinyin": "zǒu lù"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "坐飞机",
+            "pinyin": "zuò fēi jī"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "坐火车",
+            "pinyin": "zuò huǒ chē"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你是坐飞机来的吗？",
+              "pinyin": "nǐ shì zuò fēi jī lái de ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不是，我是坐火车来的。",
+              "pinyin": "bú shì ， wǒ shì zuò huǒ chē lái de 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的是怎么来的？",
+              "pinyin": "nán de shì zěn me lái de ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-28",
+      "mock_id": "M3",
+      "number": 28,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "不要了はこれ以上はいらない。既に2杯飲んだ。",
+      "tags": [
+        "change",
+        "completion"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "想喝",
+            "pinyin": "xiǎng hē"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "没喝过水",
+            "pinyin": "méi hē guò shuǐ"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "不想喝了",
+            "pinyin": "bù xiǎng hē le"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你还要喝水吗？",
+              "pinyin": "nǐ hái yào hē shuǐ ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不要了，我已经喝了两杯。",
+              "pinyin": "bú yào le ， wǒ yǐ jīng hē le liǎng bēi 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的还想喝水吗？",
+              "pinyin": "nán de hái xiǎng hē shuǐ ma ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-29",
+      "mock_id": "M3",
+      "number": 29,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "記名から所有者を推定する。",
+      "tags": [
+        "ownership",
+        "inference",
+        "state"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "小李的",
+            "pinyin": "xiǎo lǐ de"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "小王的",
+            "pinyin": "xiǎo wáng de"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "老师的",
+            "pinyin": "lǎo shī de"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "这是谁的书？",
+              "pinyin": "zhè shì shéi de shū ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "上面写着小王的名字。",
+              "pinyin": "shàng miàn xiě zhe xiǎo wáng de míng zì 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这本书最可能是谁的？",
+              "pinyin": "zhè běn shū zuì kě néng shì shéi de ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-30",
+      "mock_id": "M3",
+      "number": 30,
+      "section": "listening",
+      "part": "L3",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "徒歩の所要時間だけを選ぶ。",
+      "tags": [
+        "duration",
+        "transport",
+        "distractor"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "五分钟",
+            "pinyin": "wǔ fēn zhōng"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "二十分钟",
+            "pinyin": "èr shí fēn zhōng"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "十五分钟",
+            "pinyin": "shí wǔ fēn zhōng"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "从这儿到你家要多长时间？",
+              "pinyin": "cóng zhè ér dào nǐ jiā yào duō cháng shí jiān ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "走路二十分钟，坐车五分钟。",
+              "pinyin": "zǒu lù èr shí fēn zhōng ， zuò chē wǔ fēn zhōng 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "走路到男的家要多久？",
+              "pinyin": "zǒu lù dào nán de jiā yào duō jiǔ ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-31",
+      "mock_id": "M3",
+      "number": 31,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "B",
+      "explanation_ja": "最終的に土曜の正午。初めの金曜は不成立。",
+      "tags": [
+        "plan",
+        "correction"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "星期六晚上",
+            "pinyin": "xīng qī liù wǎn shàng"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "星期六中午",
+            "pinyin": "xīng qī liù zhōng wǔ"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "星期五中午",
+            "pinyin": "xīng qī wǔ zhōng wǔ"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "星期五一起吃饭吧。",
+              "pinyin": "xīng qī wǔ yì qǐ chī fàn ba 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我那天要上课。",
+              "pinyin": "wǒ nà tiān yào shàng kè 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "星期六中午可以吗？",
+              "pinyin": "xīng qī liù zhōng wǔ kě yǐ ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "可以，十二点见。",
+              "pinyin": "kě yǐ ， shí èr diǎn jiàn 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "他们什么时候见面？",
+              "pinyin": "tā men shén me shí hòu jiàn miàn ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-32",
+      "mock_id": "M3",
+      "number": 32,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "4個×6元＝24元。",
+      "tags": [
+        "money",
+        "calculation"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "十块",
+            "pinyin": "shí kuài"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "二十块",
+            "pinyin": "èr shí kuài"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "二十四块",
+            "pinyin": "èr shí sì kuài"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你买了几个杯子？",
+              "pinyin": "nǐ mǎi le jǐ gè bēi zi ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "四个。",
+              "pinyin": "sì gè 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "都是六块钱一个吗？",
+              "pinyin": "dōu shì liù kuài qián yí gè ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "对。",
+              "pinyin": "duì 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "这些杯子一共多少钱？",
+              "pinyin": "zhè xiē bēi zi yī gòng duō shǎo qián ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-33",
+      "mock_id": "M3",
+      "number": 33,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "読まない理由は既読。新しい本は次の提案。",
+      "tags": [
+        "experience",
+        "reason"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "不认识字",
+            "pinyin": "bù rèn shí zì"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "没有时间",
+            "pinyin": "méi yǒu shí jiān"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "已经看过了",
+            "pinyin": "yǐ jīng kàn guò le"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你怎么不看这本书了？",
+              "pinyin": "nǐ zěn me bù kàn zhè běn shū le ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我已经看过了。",
+              "pinyin": "wǒ yǐ jīng kàn guò le 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "那看看这本新的吧。",
+              "pinyin": "nà kàn kàn zhè běn xīn de ba 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "好，谢谢。",
+              "pinyin": "hǎo ， xiè xiè 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的为什么不看第一本书？",
+              "pinyin": "nán de wèi shén me bù kàn dì yī běn shū ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-34",
+      "mock_id": "M3",
+      "number": 34,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "姉と本人の誕生日を分ける。",
+      "tags": [
+        "date",
+        "person",
+        "correction"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "六月一号",
+            "pinyin": "liù yuè yī hào"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "五月十号",
+            "pinyin": "wǔ yuè shí hào"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "六月十号",
+            "pinyin": "liù yuè shí hào"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你的生日是五月十号吗？",
+              "pinyin": "nǐ de shēng rì shì wǔ yuè shí hào ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "不是，那天是我姐姐的生日。",
+              "pinyin": "bú shì ， nà tiān shì wǒ jiě jiě de shēng rì 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "那你呢？",
+              "pinyin": "nà nǐ ne ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "我是六月十号。",
+              "pinyin": "wǒ shì liù yuè shí hào 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的生日是哪天？",
+              "pinyin": "nán de shēng rì shì nǎ tiān ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-35",
+      "mock_id": "M3",
+      "number": 35,
+      "section": "listening",
+      "part": "L4",
+      "origin": "original",
+      "prompt": {
+        "zh": "",
+        "pinyin": ""
+      },
+      "answer": "C",
+      "explanation_ja": "2着目は小さすぎる。高すぎるのは1着目。",
+      "tags": [
+        "reason",
+        "reference"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "script_only",
+      "type": "audio_mc",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "太贵",
+            "pinyin": "tài guì"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "颜色不好",
+            "pinyin": "yán sè bù hǎo"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "太小",
+            "pinyin": "tài xiǎo"
+          }
+        }
+      ],
+      "audio": {
+        "turns": [
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "你买这件衣服了吗？",
+              "pinyin": "nǐ mǎi zhè jiàn yī fú le ma ？"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "没有，太贵了。",
+              "pinyin": "méi yǒu ， tài guì le 。"
+            }
+          },
+          {
+            "speaker": "female",
+            "text": {
+              "zh": "那件便宜一点儿。",
+              "pinyin": "nà jiàn pián yi yì diǎn ér 。"
+            }
+          },
+          {
+            "speaker": "male",
+            "text": {
+              "zh": "可是那件太小，我也不要。",
+              "pinyin": "kě shì nà jiàn tài xiǎo ， wǒ yě bú yào 。"
+            }
+          },
+          {
+            "speaker": "narrator",
+            "text": {
+              "zh": "男的为什么不要第二件衣服？",
+              "pinyin": "nán de wèi shén me bú yào dì èr jiàn yī fú ？"
+            }
+          }
+        ],
+        "repeat_count": 2,
+        "file": null
+      }
+    },
+    {
+      "id": "M3-36",
+      "mock_id": "M3",
+      "number": 36,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "已经八点半了，我们走吧。",
+        "pinyin": "yǐ jīng bā diǎn bàn le ， wǒ men zǒu ba 。"
+      },
+      "answer": "E",
+      "explanation_ja": "8時30分の時計を選ぶ。",
+      "tags": [
+        "time",
+        "change"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M3-R1-G1"
+    },
+    {
+      "id": "M3-37",
+      "mock_id": "M3",
+      "number": 37,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "这只小猫是黑色的。",
+        "pinyin": "zhè zhǐ xiǎo māo shì hēi sè de 。"
+      },
+      "answer": "C",
+      "explanation_ja": "黒い猫と一致する。",
+      "tags": [
+        "animal",
+        "color"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M3-R1-G1"
+    },
+    {
+      "id": "M3-38",
+      "mock_id": "M3",
+      "number": 38,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "我买了两个鸡蛋，准备做饭。",
+        "pinyin": "wǒ mǎi le liǎng gè jī dàn ， zhǔn bèi zuò fàn 。"
+      },
+      "answer": "D",
+      "explanation_ja": "卵2個の画像が一致する。",
+      "tags": [
+        "number",
+        "food"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M3-R1-G1"
+    },
+    {
+      "id": "M3-39",
+      "mock_id": "M3",
+      "number": 39,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "我想坐飞机去旅游。",
+        "pinyin": "wǒ xiǎng zuò fēi jī qù lǚ yóu 。"
+      },
+      "answer": "B",
+      "explanation_ja": "旅行の手段は飞机。",
+      "tags": [
+        "transport",
+        "plan"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M3-R1-G1"
+    },
+    {
+      "id": "M3-40",
+      "mock_id": "M3",
+      "number": 40,
+      "section": "reading",
+      "part": "R1",
+      "origin": "original",
+      "prompt": {
+        "zh": "他每天早上都看报纸。",
+        "pinyin": "tā měi tiān zǎo shàng dōu kàn bào zhǐ 。"
+      },
+      "answer": "A",
+      "explanation_ja": "日常習慣の対象物は新聞。",
+      "tags": [
+        "frequency",
+        "object"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "image_match",
+      "group_id": "M3-R1-G1"
+    },
+    {
+      "id": "M3-41",
+      "mock_id": "M3",
+      "number": 41,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "我没听清楚，请（　）说一次。",
+        "pinyin": "wǒ méi tīng qīng chǔ ， qǐng （　） shuō yī cì 。"
+      },
+      "answer": "C",
+      "explanation_ja": "再＋動詞でこれからもう一度する。",
+      "tags": [
+        "again",
+        "request"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M3-R2-G1"
+    },
+    {
+      "id": "M3-42",
+      "mock_id": "M3",
+      "number": 42,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "门开（　）呢，里面有人。",
+        "pinyin": "mén kāi （　） ne ， lǐ miàn yǒu rén 。"
+      },
+      "answer": "E",
+      "explanation_ja": "开着は開いた状態の持続。",
+      "tags": [
+        "state"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M3-R2-G1"
+    },
+    {
+      "id": "M3-43",
+      "mock_id": "M3",
+      "number": 43,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "我想（　）妈妈打电话。",
+        "pinyin": "wǒ xiǎng （　） mā mā dǎ diàn huà 。"
+      },
+      "answer": "A",
+      "explanation_ja": "给＋人＋打电话で電話の相手を示す。",
+      "tags": [
+        "recipient"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M3-R2-G1"
+    },
+    {
+      "id": "M3-44",
+      "mock_id": "M3",
+      "number": 44,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "他六点（　）起床了，真早！",
+        "pinyin": "tā liù diǎn （　） qǐ chuáng le ， zhēn zǎo ！"
+      },
+      "answer": "F",
+      "explanation_ja": "六点就起床了は6時にはもう起きた。早いという評価。",
+      "tags": [
+        "time",
+        "immediacy"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M3-R2-G1"
+    },
+    {
+      "id": "M3-45",
+      "mock_id": "M3",
+      "number": 45,
+      "section": "reading",
+      "part": "R2",
+      "origin": "original",
+      "prompt": {
+        "zh": "这三个苹果，哪个（　）大？",
+        "pinyin": "zhè sān gè píng guǒ ， nǎ ge （　） dà ？"
+      },
+      "answer": "B",
+      "explanation_ja": "3つの中で最大を问う最。",
+      "tags": [
+        "superlative"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "word_bank",
+      "group_id": "M3-R2-G1"
+    },
+    {
+      "id": "M3-46",
+      "mock_id": "M3",
+      "number": 46,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "小王说他明天来，今天还在北京。",
+        "pinyin": "xiǎo wáng shuō tā míng tiān lái ， jīn tiān hái zài běi jīng 。"
+      },
+      "answer": "F",
+      "explanation_ja": "来るのは明日。今日はまだ北京。",
+      "tags": [
+        "not_yet",
+        "plan"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "小王已经到这里了。",
+        "pinyin": "xiǎo wáng yǐ jīng dào zhè lǐ le 。"
+      }
+    },
+    {
+      "id": "M3-47",
+      "mock_id": "M3",
+      "number": 47,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "我们八点开始上课，上了两个小时，现在下课了。",
+        "pinyin": "wǒ men bā diǎn kāi shǐ shàng kè ， shàng le liǎng gè xiǎo shí ， xiàn zài xià kè le 。"
+      },
+      "answer": "T",
+      "explanation_ja": "8時＋2時間＝10時。",
+      "tags": [
+        "time",
+        "calculation"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "现在是十点。",
+        "pinyin": "xiàn zài shì shí diǎn 。"
+      }
+    },
+    {
+      "id": "M3-48",
+      "mock_id": "M3",
+      "number": 48,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "我喜欢喝茶，但是今天不想喝茶，想喝水。",
+        "pinyin": "wǒ xǐ huān hē chá ， dàn shì jīn tiān bù xiǎng hē chá ， xiǎng hē shuǐ 。"
+      },
+      "answer": "T",
+      "explanation_ja": "普段の好みと今日の希望を分ける。",
+      "tags": [
+        "preference",
+        "contrast"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "我今天想喝水。",
+        "pinyin": "wǒ jīn tiān xiǎng hē shuǐ 。"
+      }
+    },
+    {
+      "id": "M3-49",
+      "mock_id": "M3",
+      "number": 49,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "姐姐比我高，弟弟比我矮。",
+        "pinyin": "jiě jiě bǐ wǒ gāo ， dì di bǐ wǒ ǎi 。"
+      },
+      "answer": "F",
+      "explanation_ja": "姉＞私＞弟なので弟は姉より低い。",
+      "tags": [
+        "comparison",
+        "logic"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "弟弟比姐姐高。",
+        "pinyin": "dì di bǐ jiě jiě gāo 。"
+      }
+    },
+    {
+      "id": "M3-50",
+      "mock_id": "M3",
+      "number": 50,
+      "section": "reading",
+      "part": "R3",
+      "origin": "original",
+      "prompt": {
+        "zh": "我没坐过飞机。这次去上海，我也准备坐火车。",
+        "pinyin": "wǒ méi zuò guò fēi jī 。 zhè cì qù shàng hǎi ， wǒ yě zhǔn bèi zuò huǒ chē 。"
+      },
+      "answer": "F",
+      "explanation_ja": "没坐过飞机で飛行機の経験を否定。",
+      "tags": [
+        "experience",
+        "negation"
+      ],
+      "difficulty": 3,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "text_true_false",
+      "statement": {
+        "zh": "我以前坐过飞机。",
+        "pinyin": "wǒ yǐ qián zuò guò fēi jī 。"
+      }
+    },
+    {
+      "id": "M3-51",
+      "mock_id": "M3",
+      "number": 51,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "对不起，我把你的杯子打坏了。",
+        "pinyin": "duì bù qǐ ， wǒ bǎ nǐ de bēi zi dǎ huài le 。"
+      },
+      "answer": "B",
+      "explanation_ja": "謝罪に没关系と返し、次は注意してと続く。",
+      "tags": [
+        "response",
+        "result"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G1"
+    },
+    {
+      "id": "M3-52",
+      "mock_id": "M3",
+      "number": 52,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "这两件衣服，你喜欢哪个颜色？",
+        "pinyin": "zhè liǎng jiàn yī fú ， nǐ xǐ huān nǎ ge yán sè ？"
+      },
+      "answer": "A",
+      "explanation_ja": "好みの色の問いに白色で答える。",
+      "tags": [
+        "question",
+        "preference"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G1"
+    },
+    {
+      "id": "M3-53",
+      "mock_id": "M3",
+      "number": 53,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "他怎么还没来？",
+        "pinyin": "tā zěn me hái méi lái ？"
+      },
+      "answer": "C",
+      "explanation_ja": "到着への問いに、もうすぐ到着と応じる。",
+      "tags": [
+        "not_yet",
+        "response"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G1"
+    },
+    {
+      "id": "M3-54",
+      "mock_id": "M3",
+      "number": 54,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "现在可以给他打电话吗？",
+        "pinyin": "xiàn zài kě yǐ gěi tā dǎ diàn huà ma ？"
+      },
+      "answer": "D",
+      "explanation_ja": "可否に不可以、理由は睡眠中。",
+      "tags": [
+        "permission",
+        "progressive"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G1"
+    },
+    {
+      "id": "M3-55",
+      "mock_id": "M3",
+      "number": 55,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你每天练习几次汉语？",
+        "pinyin": "nǐ měi tiān liàn xí jǐ cì hàn yǔ ？"
+      },
+      "answer": "E",
+      "explanation_ja": "几次には回数で答える。",
+      "tags": [
+        "frequency",
+        "question"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G1"
+    },
+    {
+      "id": "M3-56",
+      "mock_id": "M3",
+      "number": 56,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你以前来过这里吗？",
+        "pinyin": "nǐ yǐ qián lái guò zhè lǐ ma ？"
+      },
+      "answer": "E",
+      "explanation_ja": "以前の経験を否定し今日が初回と答える。",
+      "tags": [
+        "experience",
+        "response"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G2"
+    },
+    {
+      "id": "M3-57",
+      "mock_id": "M3",
+      "number": 57,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "这是谁给你买的手表？",
+        "pinyin": "zhè shì shuí gěi nǐ mǎi de shǒu biǎo ？"
+      },
+      "answer": "C",
+      "explanation_ja": "谁给你买的に哥哥と購入者を示す。",
+      "tags": [
+        "shi_de",
+        "person"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G2"
+    },
+    {
+      "id": "M3-58",
+      "mock_id": "M3",
+      "number": 58,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "我们现在去商店吧。",
+        "pinyin": "wǒ men xiàn zài qù shāng diàn ba 。"
+      },
+      "answer": "B",
+      "explanation_ja": "今行こうという誘いに食後の順序を示す。",
+      "tags": [
+        "sequence",
+        "suggestion"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G2"
+    },
+    {
+      "id": "M3-59",
+      "mock_id": "M3",
+      "number": 59,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你会说汉语吗？",
+        "pinyin": "nǐ huì shuō hàn yǔ ma ？"
+      },
+      "answer": "D",
+      "explanation_ja": "能力を会一点儿と答え、程度を補足する。",
+      "tags": [
+        "ability",
+        "degree_complement"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G2"
+    },
+    {
+      "id": "M3-60",
+      "mock_id": "M3",
+      "number": 60,
+      "section": "reading",
+      "part": "R4",
+      "origin": "original",
+      "prompt": {
+        "zh": "你家在哪儿？",
+        "pinyin": "nǐ jiā zài nǎ ér ？"
+      },
+      "answer": "A",
+      "explanation_ja": "場所は病院の隣。",
+      "tags": [
+        "question",
+        "location"
+      ],
+      "difficulty": 2,
+      "review_status": "author_checked",
+      "audio_status": "not_applicable",
+      "type": "sentence_match",
+      "group_id": "M3-R4-G2"
+    }
+  ],
+  "groups": [
+    {
+      "id": "M1-L2-G1",
+      "part": "L2",
+      "options": [
+        {
+          "id": "A",
+          "asset_id": "phone"
+        },
+        {
+          "id": "B",
+          "asset_id": "rice"
+        },
+        {
+          "id": "C",
+          "asset_id": "bicycle"
+        },
+        {
+          "id": "D",
+          "asset_id": "soccer"
+        },
+        {
+          "id": "E",
+          "asset_id": "newspaper"
+        },
+        {
+          "id": "F",
+          "asset_id": "milk"
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "我每天早上喝牛奶。",
+          "pinyin": "wǒ měi tiān zǎo shàng hē niú nǎi 。"
+        },
+        "answer": "F",
+        "audio": {
+          "turns": [
+            {
+              "speaker": "female",
+              "text": {
+                "zh": "你每天早上喝什么？",
+                "pinyin": "nǐ měi tiān zǎo shàng hē shén me ？"
+              }
+            },
+            {
+              "speaker": "male",
+              "text": {
+                "zh": "我每天早上喝牛奶。",
+                "pinyin": "wǒ měi tiān zǎo shàng hē niú nǎi 。"
+              }
+            }
+          ],
+          "repeat_count": 2,
+          "file": null
+        }
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M1-L2-G2",
+      "part": "L2",
+      "options": [
+        {
+          "id": "A",
+          "asset_id": "snow"
+        },
+        {
+          "id": "B",
+          "asset_id": "computer"
+        },
+        {
+          "id": "C",
+          "asset_id": "fish"
+        },
+        {
+          "id": "D",
+          "asset_id": "swimming"
+        },
+        {
+          "id": "E",
+          "asset_id": "shoes"
+        }
+      ],
+      "example": null,
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M1-R1-G1",
+      "part": "R1",
+      "options": [
+        {
+          "id": "A",
+          "asset_id": "tea"
+        },
+        {
+          "id": "B",
+          "asset_id": "train"
+        },
+        {
+          "id": "C",
+          "asset_id": "book_on"
+        },
+        {
+          "id": "D",
+          "asset_id": "basketball"
+        },
+        {
+          "id": "E",
+          "asset_id": "sun"
+        },
+        {
+          "id": "F",
+          "asset_id": "skirt"
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "这条裙子很漂亮。",
+          "pinyin": "zhè tiáo qún zi hěn piào liàng 。"
+        },
+        "answer": "F"
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M1-R2-G1",
+      "part": "R2",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "因为",
+            "pinyin": "yīn wèi"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "两",
+            "pinyin": "liǎng"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "正在",
+            "pinyin": "zhèng zài"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "zh": "明天",
+            "pinyin": "míng tiān"
+          }
+        },
+        {
+          "id": "E",
+          "text": {
+            "zh": "比",
+            "pinyin": "bǐ"
+          }
+        },
+        {
+          "id": "F",
+          "text": {
+            "zh": "完",
+            "pinyin": "wán"
+          }
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "今天我很忙，（　）再去吧。",
+          "pinyin": "jīn tiān wǒ hěn máng ，（　） zài qù ba 。"
+        },
+        "answer": "D"
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M1-R4-G1",
+      "part": "R4",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "在桌子下面。",
+            "pinyin": "zài zhuō zi xià miàn 。"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "不客气。",
+            "pinyin": "bú kè qì 。"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "八点半。",
+            "pinyin": "bā diǎn bàn 。"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "zh": "我也很高兴。",
+            "pinyin": "wǒ yě hěn gāo xìng 。"
+          }
+        },
+        {
+          "id": "E",
+          "text": {
+            "zh": "我想买一件衣服。",
+            "pinyin": "wǒ xiǎng mǎi yī jiàn yī fú 。"
+          }
+        },
+        {
+          "id": "F",
+          "text": {
+            "zh": "明天会下雨。",
+            "pinyin": "míng tiān huì xià yǔ 。"
+          }
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "明天天气怎么样？",
+          "pinyin": "míng tiān tiān qì zěn me yàng ？"
+        },
+        "answer": "F"
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M1-R4-G2",
+      "part": "R4",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "有点儿累，想休息。",
+            "pinyin": "yǒu diǎn ér lèi ， xiǎng xiū xī 。"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "坐公共汽车。",
+            "pinyin": "zuò gōng gòng qì chē 。"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "好，我再说一次。",
+            "pinyin": "hǎo ， wǒ zài shuō yī cì 。"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "zh": "还没做完。",
+            "pinyin": "hái méi zuò wán 。"
+          }
+        },
+        {
+          "id": "E",
+          "text": {
+            "zh": "是我妈妈的。",
+            "pinyin": "shì wǒ mā mā de 。"
+          }
+        }
+      ],
+      "example": null,
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M2-L2-G1",
+      "part": "L2",
+      "options": [
+        {
+          "id": "A",
+          "asset_id": "basketball"
+        },
+        {
+          "id": "B",
+          "asset_id": "plane"
+        },
+        {
+          "id": "C",
+          "asset_id": "eggs2"
+        },
+        {
+          "id": "D",
+          "asset_id": "shirt"
+        },
+        {
+          "id": "E",
+          "asset_id": "clock730"
+        },
+        {
+          "id": "F",
+          "asset_id": "cat_black"
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "这是一只黑色的小猫。",
+          "pinyin": "zhè shì yī zhī hēi sè de xiǎo māo 。"
+        },
+        "answer": "F",
+        "audio": {
+          "turns": [
+            {
+              "speaker": "female",
+              "text": {
+                "zh": "你的小猫是什么颜色的？",
+                "pinyin": "nǐ de xiǎo māo shì shén me yán sè de ？"
+              }
+            },
+            {
+              "speaker": "male",
+              "text": {
+                "zh": "这是一只黑色的小猫。",
+                "pinyin": "zhè shì yī zhī hēi sè de xiǎo māo 。"
+              }
+            }
+          ],
+          "repeat_count": 2,
+          "file": null
+        }
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M2-L2-G2",
+      "part": "L2",
+      "options": [
+        {
+          "id": "A",
+          "asset_id": "rain"
+        },
+        {
+          "id": "B",
+          "asset_id": "newspaper"
+        },
+        {
+          "id": "C",
+          "asset_id": "tea"
+        },
+        {
+          "id": "D",
+          "asset_id": "running"
+        },
+        {
+          "id": "E",
+          "asset_id": "phone"
+        }
+      ],
+      "example": null,
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M2-R1-G1",
+      "part": "R1",
+      "options": [
+        {
+          "id": "A",
+          "asset_id": "computer"
+        },
+        {
+          "id": "B",
+          "asset_id": "fish"
+        },
+        {
+          "id": "C",
+          "asset_id": "snow"
+        },
+        {
+          "id": "D",
+          "asset_id": "shoes"
+        },
+        {
+          "id": "E",
+          "asset_id": "book_under"
+        },
+        {
+          "id": "F",
+          "asset_id": "bus"
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "这辆公共汽车很大。",
+          "pinyin": "zhè liàng gōng gòng qì chē hěn dà 。"
+        },
+        "answer": "F"
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M2-R2-G1",
+      "part": "R2",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "得",
+            "pinyin": "dé"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "别",
+            "pinyin": "bié"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "离",
+            "pinyin": "lí"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "zh": "昨天",
+            "pinyin": "zuó tiān"
+          }
+        },
+        {
+          "id": "E",
+          "text": {
+            "zh": "过",
+            "pinyin": "guò"
+          }
+        },
+        {
+          "id": "F",
+          "text": {
+            "zh": "所以",
+            "pinyin": "suǒ yǐ"
+          }
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "今天星期二，（　）星期一。",
+          "pinyin": "jīn tiān xīng qī èr ，（　） xīng qī yī 。"
+        },
+        "answer": "D"
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M2-R4-G1",
+      "part": "R4",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "我弟弟，他今年十岁。",
+            "pinyin": "wǒ dì di ， tā jīn nián shí suì 。"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "好的，慢走。",
+            "pinyin": "hǎo de ， màn zǒu 。"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "还没，他在路上。",
+            "pinyin": "hái méi ， tā zài lù shàng 。"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "zh": "两杯，谢谢。",
+            "pinyin": "liǎng bēi ， xiè xiè 。"
+          }
+        },
+        {
+          "id": "E",
+          "text": {
+            "zh": "我没听懂，请再说一次。",
+            "pinyin": "wǒ méi tīng dǒng ， qǐng zài shuō yī cì 。"
+          }
+        },
+        {
+          "id": "F",
+          "text": {
+            "zh": "今天星期一。",
+            "pinyin": "jīn tiān xīng qī yī 。"
+          }
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "今天星期几？",
+          "pinyin": "jīn tiān xīng qī jǐ ？"
+        },
+        "answer": "F"
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M2-R4-G2",
+      "part": "R4",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "因为今天要考试。",
+            "pinyin": "yīn wèi jīn tiān yào kǎo shì 。"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "不远，走路十分钟。",
+            "pinyin": "bù yuǎn ， zǒu lù shí fēn zhōng 。"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "是昨天买的。",
+            "pinyin": "shì zuó tiān mǎi de 。"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "zh": "好，我们一起去。",
+            "pinyin": "hǎo ， wǒ men yì qǐ qù 。"
+          }
+        },
+        {
+          "id": "E",
+          "text": {
+            "zh": "可以，你坐吧。",
+            "pinyin": "kě yǐ ， nǐ zuò ba 。"
+          }
+        }
+      ],
+      "example": null,
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M3-L2-G1",
+      "part": "L2",
+      "options": [
+        {
+          "id": "A",
+          "asset_id": "book_on"
+        },
+        {
+          "id": "B",
+          "asset_id": "swimming"
+        },
+        {
+          "id": "C",
+          "asset_id": "milk"
+        },
+        {
+          "id": "D",
+          "asset_id": "train"
+        },
+        {
+          "id": "E",
+          "asset_id": "phone"
+        },
+        {
+          "id": "F",
+          "asset_id": "sun"
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "今天是晴天，可以出去玩儿。",
+          "pinyin": "jīn tiān shì qíng tiān ， kě yǐ chū qù wán ér 。"
+        },
+        "answer": "F",
+        "audio": {
+          "turns": [
+            {
+              "speaker": "female",
+              "text": {
+                "zh": "今天天气怎么样？",
+                "pinyin": "jīn tiān tiān qì zěn me yàng ？"
+              }
+            },
+            {
+              "speaker": "male",
+              "text": {
+                "zh": "今天是晴天，可以出去玩儿。",
+                "pinyin": "jīn tiān shì qíng tiān ， kě yǐ chū qù wán ér 。"
+              }
+            }
+          ],
+          "repeat_count": 2,
+          "file": null
+        }
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M3-L2-G2",
+      "part": "L2",
+      "options": [
+        {
+          "id": "A",
+          "asset_id": "rice"
+        },
+        {
+          "id": "B",
+          "asset_id": "basketball"
+        },
+        {
+          "id": "C",
+          "asset_id": "computer"
+        },
+        {
+          "id": "D",
+          "asset_id": "rain"
+        },
+        {
+          "id": "E",
+          "asset_id": "skirt"
+        }
+      ],
+      "example": null,
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M3-R1-G1",
+      "part": "R1",
+      "options": [
+        {
+          "id": "A",
+          "asset_id": "newspaper"
+        },
+        {
+          "id": "B",
+          "asset_id": "plane"
+        },
+        {
+          "id": "C",
+          "asset_id": "cat_black"
+        },
+        {
+          "id": "D",
+          "asset_id": "eggs2"
+        },
+        {
+          "id": "E",
+          "asset_id": "clock830"
+        },
+        {
+          "id": "F",
+          "asset_id": "fish"
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "今天吃鱼吧。",
+          "pinyin": "jīn tiān chī yú ba 。"
+        },
+        "answer": "F"
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M3-R2-G1",
+      "part": "R2",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "给",
+            "pinyin": "gěi"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "最",
+            "pinyin": "zuì"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "再",
+            "pinyin": "zài"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "zh": "冷",
+            "pinyin": "lěng"
+          }
+        },
+        {
+          "id": "E",
+          "text": {
+            "zh": "着",
+            "pinyin": "zhe"
+          }
+        },
+        {
+          "id": "F",
+          "text": {
+            "zh": "就",
+            "pinyin": "jiù"
+          }
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "今天下雪了，外面很（　）。",
+          "pinyin": "jīn tiān xià xuě le ， wài miàn hěn （　）。"
+        },
+        "answer": "D"
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M3-R4-G1",
+      "part": "R4",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "我觉得白色的好看。",
+            "pinyin": "wǒ jué de bái sè de hǎo kàn 。"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "没关系，下次小心。",
+            "pinyin": "méi guān xì ， xià cì xiǎo xīn 。"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "快到了，再等五分钟。",
+            "pinyin": "kuài dào le ， zài děng wǔ fēn zhōng 。"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "zh": "不可以，他正在睡觉。",
+            "pinyin": "bù kě yǐ ， tā zhèng zài shuì jiào 。"
+          }
+        },
+        {
+          "id": "E",
+          "text": {
+            "zh": "三次，每次十分钟。",
+            "pinyin": "sān cì ， měi cì shí fēn zhōng 。"
+          }
+        },
+        {
+          "id": "F",
+          "text": {
+            "zh": "我姓李。",
+            "pinyin": "wǒ xìng lǐ 。"
+          }
+        }
+      ],
+      "example": {
+        "prompt": {
+          "zh": "请问，您姓什么？",
+          "pinyin": "qǐng wèn ， nín xìng shén me ？"
+        },
+        "answer": "F"
+      },
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    },
+    {
+      "id": "M3-R4-G2",
+      "part": "R4",
+      "options": [
+        {
+          "id": "A",
+          "text": {
+            "zh": "在医院旁边，很近。",
+            "pinyin": "zài yī yuàn páng biān ， hěn jìn 。"
+          }
+        },
+        {
+          "id": "B",
+          "text": {
+            "zh": "等我吃完饭再去。",
+            "pinyin": "děng wǒ chī wán fàn zài qù 。"
+          }
+        },
+        {
+          "id": "C",
+          "text": {
+            "zh": "是我哥哥给我买的。",
+            "pinyin": "shì wǒ gē gē gěi wǒ mǎi de 。"
+          }
+        },
+        {
+          "id": "D",
+          "text": {
+            "zh": "会一点儿，但说得不太好。",
+            "pinyin": "huì yì diǎn ér ， dàn shuō dé bù tài hǎo 。"
+          }
+        },
+        {
+          "id": "E",
+          "text": {
+            "zh": "没有，我今天才第一次来。",
+            "pinyin": "méi yǒu ， wǒ jīn tiān cái dì yī cì lái 。"
+          }
+        }
+      ],
+      "example": null,
+      "selection_policy": "shared_options_keep_visible",
+      "shuffle": false
+    }
+  ],
+  "pinyin_policy": "辞書形・文字ごとの音節表記。一・不の変調と児化は音声と一致しない場合がある。主要な多音字を点検。"
+}

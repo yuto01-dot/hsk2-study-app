@@ -370,6 +370,7 @@
 </head>
 <body>
 <div id="hsk-root" class="hsk-app"></div>
+<div id="exam-root" class="hsk-app" hidden></div>
 
 <script>
 (function(){
@@ -948,6 +949,11 @@
             <div class="title">クイズ</div>
             <div class="desc">4択に答えてXPを稼ぐ。テンポよく実力チェック</div>
           </button>
+          <button class="mode-card" id="mode-exam" style="grid-column: 1 / -1;">
+            <span class="icon">📝</span>
+            <div class="title">問題演習</div>
+            <div class="desc">オリジナル問題180問・公式公開問題の解答記録・間違い直しはこちら</div>
+          </button>
         </div>
 
         <div class="section-title">カテゴリを選ぶ</div>
@@ -960,6 +966,9 @@
     });
     wrap.querySelector("#mode-flash").addEventListener("click", startFlashcards);
     wrap.querySelector("#mode-quiz").addEventListener("click", startQuiz);
+    wrap.querySelector("#mode-exam").addEventListener("click", () => {
+      if (window.HSKExam) window.HSKExam.open();
+    });
 
     const genSyncBtn = wrap.querySelector("#gen-sync");
     if (genSyncBtn) genSyncBtn.addEventListener("click", startNewSync);
@@ -1140,6 +1149,8 @@
 
   loadProgress();
 
+  window.HSKApp = { goHome: goHome };
+
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {
       navigator.serviceWorker.register("service-worker.js").catch(() => {});
@@ -1147,5 +1158,6 @@
   }
 })();
 </script>
+<script src="exam.js"></script>
 </body>
 </html>
