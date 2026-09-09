@@ -1,4 +1,4 @@
-const CACHE_NAME = "hsk2-cache-v2";
+const CACHE_NAME = "hsk2-cache-v3";
 const ASSETS = [
   "./",
   "./index.html",
@@ -24,6 +24,14 @@ self.addEventListener("activate", (event) => {
 });
 
 self.addEventListener("fetch", (event) => {
+  const url = new URL(event.request.url);
+
+  // 自分のドメイン以外（Firebaseなど）へのリクエストは
+  // キャッシュせず常にネットワークへ素通しする（進捗データを古いまま返さないため）
+  if (url.origin !== self.location.origin) {
+    return;
+  }
+
   event.respondWith(
     caches.match(event.request).then((cached) => {
       if (cached) return cached;
