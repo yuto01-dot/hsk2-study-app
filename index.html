@@ -211,6 +211,30 @@
     80% { opacity: 1; }
     100% { opacity: 0; }
   }
+  .xp-float {
+    display: inline-block;
+    font-weight: 800;
+    color: var(--jade);
+    animation: xpFloat 1.3s ease forwards;
+  }
+  .level-card .xp-float {
+    font-size: 15px;
+    color: #eaffef;
+    text-shadow: 0 1px 3px rgba(0,0,0,0.25);
+  }
+  .mini-lv .xp-float { font-size: 12px; }
+  @keyframes xpFloat {
+    0% { opacity: 0; transform: translateY(6px) scale(0.7); }
+    18% { opacity: 1; transform: translateY(0) scale(1.25); }
+    75% { opacity: 1; transform: translateY(-8px) scale(1); }
+    100% { opacity: 0; transform: translateY(-16px) scale(0.95); }
+  }
+  .level-bar-fill.gained, .mini-bar > div.gained { animation: barFlash 0.6s ease; }
+  @keyframes barFlash {
+    0% { filter: brightness(1); }
+    40% { filter: brightness(1.6); }
+    100% { filter: brightness(1); }
+  }
 
   /* ---------- home ---------- */
   .section-title {
@@ -627,6 +651,8 @@
     syncStatus: "idle",  // idle | ok | err
     _leveledUp: false,
     _levelUpTimer: null,
+    _lastXpGain: null,
+    _xpGainTimer: null,
   };
 
   // ---------------------------------------------------------------
@@ -877,6 +903,11 @@
     const before = levelInfo(state.xp).level;
     state.xp += amount;
     const after = levelInfo(state.xp).level;
+
+    state._lastXpGain = amount;
+    clearTimeout(state._xpGainTimer);
+    state._xpGainTimer = setTimeout(() => { state._lastXpGain = null; render(); }, 1300);
+
     if (after > before) {
       state._leveledUp = true;
       clearTimeout(state._levelUpTimer);
@@ -953,7 +984,8 @@
     const lvl = levelInfo(state.xp);
     return `<div class="mini-lv${state._leveledUp ? " leveling" : ""}">
       Lv.${lvl.level}
-      <div class="mini-bar"><div style="width:${lvl.pct}%"></div></div>
+      <div class="mini-bar"><div class="${state._lastXpGain ? "gained" : ""}" style="width:${lvl.pct}%"></div></div>
+      ${state._lastXpGain ? `<span class="xp-float">+${state._lastXpGain}</span>` : ""}
     </div>`;
   }
 
@@ -992,11 +1024,12 @@
             <div class="lv-wrap">
               <span class="lv">Lv.${lvl.level}</span>
               <span class="streak">🔥 ${state.streak}日連続</span>
+              ${state._lastXpGain ? `<span class="xp-float">+${state._lastXpGain} XP</span>` : ""}
               ${state._leveledUp ? `<span class="level-up-badge">LEVEL UP!</span>` : ""}
             </div>
             <div class="xp-num">${lvl.into} / ${lvl.span} XP<br>次のレベルまで ${lvl.span - lvl.into} XP</div>
           </div>
-          <div class="level-bar-track"><div class="level-bar-fill" style="width:${lvl.pct}%"></div></div>
+          <div class="level-bar-track"><div class="level-bar-fill${state._lastXpGain ? " gained" : ""}" style="width:${lvl.pct}%"></div></div>
         </div>
 
         <div class="backup-panel">
