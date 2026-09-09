@@ -558,7 +558,100 @@
     saveError: "",
     backupOpen: false,
     restoreText: "",
+    syncCode: null,
+    syncStatus: "idle",  // idle | ok | err
   };
+
+  // ---------------------------------------------------------------
+  // 端末間同期（Firebase Realtime Database）
+  // ---------------------------------------------------------------
+  const FIREBASE_DB_URL = "https://hsk2-study-app-default-rtdb.firebaseio.com";
+
+  function pullFromCloud(code) {
+    return fetch(FIREBASE_DB_URL + "/hsk2/" + encodeURIComponent(code) + ".json")
+      .then((res) => {
+        if (!res.ok) throw new Error("network");
+        return res.json();
+      });
+  }
+
+  function pushToCloud() {
+    if (!state.syncCode) return Promise.resolve();
+    const payload = {
+      known: state.known, xp: state.xp, streak: state.streak,
+      lastDate: state._lastDate, updatedAt: state._updatedAt || Date.now()
+    };
+    return fetch(FIREBASE_DB_URL + "/hsk2/" + encodeURIComponent(state.syncCode) + ".json", {
+      method: "PUT",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    }).then((res) => {
+      state.syncStatus = res.ok ? "ok" : "err";
+      render();
+    }).catch(() => {
+      state.syncStatus = "err";
+      render();
+    });
+  }
+
+  function syncNow(afterLinking) {
+    if (!state.syncCode) return Promise.resolve();
+    return pullFromCloud(state.syncCode).then((remote) => {
+      const localUpdatedAt = state._updatedAt || 0;
+      if (remote && (remote.updatedAt || 0) > localUpdatedAt) {
+        state.known = remote.known || {};
+        state.xp = remote.xp || 0;
+        state.streak = remote.streak || 0;
+        state._lastDate = remote.lastDate;
+        state._updatedAt = remote.updatedAt;
+        persistLocal();
+        state.syncStatus = "ok";
+        if (afterLinking) showToast("クラウドの進捗を読み込みました ☁️");
+        render();
+      } else {
+        return pushToCloud();
+      }
+    }).catch(() => {
+      state.syncStatus = "err";
+      render();
+    });
+  }
+
+  function generateSyncCode() {
+    const alphabet = "23456789ABCDEFGHJKMNPQRSTUVWXYZ";
+    let code = "";
+    for (let i = 0; i < 8; i++) code += alphabet[Math.floor(Math.random() * alphabet.length)];
+    return code;
+  }
+
+  function startNewSync() {
+    const code = generateSyncCode();
+    state.syncCode = code;
+    localStorage.setItem("hsk2-sync-code", code);
+    state._updatedAt = Date.now();
+    persistLocal();
+    pushToCloud();
+    render();
+  }
+
+  function linkSync(rawCode) {
+    const code = rawCode.trim().toUpperCase();
+    if (code.length < 6 || code.length > 16) {
+      showToast("コードの形式が正しくありません");
+      return;
+    }
+    state.syncCode = code;
+    localStorage.setItem("hsk2-sync-code", code);
+    render();
+    syncNow(true);
+  }
+
+  function unlinkSync() {
+    state.syncCode = null;
+    state.syncStatus = "idle";
+    localStorage.removeItem("hsk2-sync-code");
+    render();
+  }
 
   // ---------------------------------------------------------------
   // 手動バックアップ（コード方式）
@@ -593,6 +686,15 @@
     return d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate();
   }
 
+  function persistLocal() {
+    try {
+      localStorage.setItem("hsk2-progress", JSON.stringify({
+        known: state.known, xp: state.xp, streak: state.streak,
+        lastDate: state._lastDate, updatedAt: state._updatedAt
+      }));
+    } catch (e) {}
+  }
+
   function loadProgress() {
     try {
       const raw = localStorage.getItem("hsk2-progress");
@@ -602,14 +704,17 @@
         state.xp = data.xp || 0;
         state.streak = data.streak || 0;
         state._lastDate = data.lastDate;
+        state._updatedAt = data.updatedAt || 0;
       }
       state.saveStatus = "ok";
     } catch (e) {
       state.saveStatus = "err";
       state.saveError = "この端末では保存機能が使えません（プライベートブラウズ中など）";
     }
+    state.syncCode = localStorage.getItem("hsk2-sync-code") || null;
     state.loaded = true;
     render();
+    if (state.syncCode) syncNow(false);
   }
 
   function saveProgress() {
@@ -619,15 +724,15 @@
         state.streak = state._lastDate ? state.streak + 1 : 1;
         state._lastDate = today;
       }
-      localStorage.setItem("hsk2-progress", JSON.stringify({
-        known: state.known, xp: state.xp, streak: state.streak, lastDate: state._lastDate
-      }));
+      state._updatedAt = Date.now();
+      persistLocal();
       state.saveStatus = "ok";
     } catch (e) {
       state.saveStatus = "err";
       state.saveError = "保存に失敗しました: " + ((e && (e.message || String(e))) || "不明なエラー");
     }
     render();
+    pushToCloud();
   }
 
   function showToast(msg) {
@@ -786,6 +891,29 @@
         ${state.saveStatus === "ok" ? `<div class="save-status ok">✓ この端末に保存されています</div>` : ""}
 
         <div class="backup-panel">
+          <div class="bp-title">🔗 端末間同期</div>
+          <div class="bp-desc">PCとiPhoneなど別の端末で同じ「同期コード」を設定すると、進捗が自動的に共有されます。</div>
+          ${state.syncCode ? `
+            <div style="font-family:monospace;font-size:22px;font-weight:700;text-align:center;letter-spacing:3px;background:var(--paper);border-radius:10px;padding:12px;margin-bottom:8px;color:var(--indigo);">${state.syncCode}</div>
+            <div class="bp-row">
+              <button class="bp-btn copy" id="copy-sync">コードをコピー</button>
+              <button class="bp-btn restore" id="unlink-sync">連携を解除</button>
+            </div>
+            ${state.syncStatus === "ok" ? `<div class="save-status ok" style="margin-top:8px;">☁️ クラウド同期中</div>` : ""}
+            ${state.syncStatus === "err" ? `<div class="save-status err" style="margin-top:8px;">⚠️ 同期に失敗しました（オフラインでも学習は続けられます）</div>` : ""}
+          ` : `
+            <div class="bp-row">
+              <button class="bp-btn copy" id="gen-sync">新しいコードを発行</button>
+            </div>
+            <input type="text" id="sync-input" placeholder="他の端末のコードを入力" maxlength="16"
+              style="width:100%;margin-top:10px;padding:12px;border-radius:8px;border:1px solid var(--indigo-soft);font-family:monospace;font-size:16px;text-transform:uppercase;background:var(--paper);color:var(--ink);box-sizing:border-box;">
+            <div class="bp-row">
+              <button class="bp-btn restore" id="link-sync">このコードで連携する</button>
+            </div>
+          `}
+        </div>
+
+        <div class="backup-panel">
           <div class="bp-title">📋 進捗コード（手動バックアップ）</div>
           <div class="bp-desc">機種変更や別ブラウザに移るときはこちらを使ってください。学習後に「コードをコピー」→メモ帳などに貼り付けて保管。次回開いたら「コードから復元」に貼り付けて読み込むと続きから再開できます。</div>
           ${state.backupOpen ? `
@@ -832,6 +960,26 @@
     });
     wrap.querySelector("#mode-flash").addEventListener("click", startFlashcards);
     wrap.querySelector("#mode-quiz").addEventListener("click", startQuiz);
+
+    const genSyncBtn = wrap.querySelector("#gen-sync");
+    if (genSyncBtn) genSyncBtn.addEventListener("click", startNewSync);
+    const linkSyncBtn = wrap.querySelector("#link-sync");
+    if (linkSyncBtn) linkSyncBtn.addEventListener("click", () => {
+      const text = wrap.querySelector("#sync-input").value;
+      if (text.trim()) linkSync(text);
+      else showToast("コードを入力してください");
+    });
+    const unlinkSyncBtn = wrap.querySelector("#unlink-sync");
+    if (unlinkSyncBtn) unlinkSyncBtn.addEventListener("click", unlinkSync);
+    const copySyncBtn = wrap.querySelector("#copy-sync");
+    if (copySyncBtn) copySyncBtn.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(state.syncCode);
+        showToast("コピーしました ✓");
+      } catch (e) {
+        showToast("手動で選択してコピーしてください");
+      }
+    });
 
     const openBtn = wrap.querySelector("#open-backup");
     if (openBtn) openBtn.addEventListener("click", () => { state.backupOpen = true; render(); });
