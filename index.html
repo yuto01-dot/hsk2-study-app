@@ -922,6 +922,7 @@
       state.known[card.h] = true;
     } else {
       delete state.known[card.h];
+      gainXp(4);
     }
     saveProgress();
     if (state.idx + 1 < state.deck.length) {
@@ -944,6 +945,8 @@
       state.quiz.score += 1;
       gainXp(15);
       if (!state.known[opt.h]) state.known[opt.h] = true;
+    } else {
+      gainXp(4);
     }
     saveProgress();
     render();
@@ -1292,7 +1295,12 @@
 
   loadProgress();
 
-  window.HSKApp = { goHome: goHome };
+  function addExternalXp(amount) {
+    gainXp(amount);
+    saveProgress();
+  }
+
+  window.HSKApp = { goHome: goHome, gainXp: addExternalXp };
 
   if ("serviceWorker" in navigator) {
     window.addEventListener("load", () => {

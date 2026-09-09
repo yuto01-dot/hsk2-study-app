@@ -474,6 +474,14 @@
   function clearReadingTimer() { if (readingTimerHandle) { clearInterval(readingTimerHandle); readingTimerHandle = null; } }
   function clearAllTimers() { clearTranscriptTimer(); clearReadingTimer(); }
 
+  // 単語学習アプリのレベル／XPシステムに反映する（正解15XP・不正解でも4XP）。
+  // exam.js単独では動かないため、window.HSKApp（index.html側）が公開されている場合のみ呼ぶ。
+  function awardXpForAnswer(isCorrect) {
+    if (window.HSKApp && typeof window.HSKApp.gainXp === "function") {
+      window.HSKApp.gainXp(isCorrect ? 15 : 4);
+    }
+  }
+
   function persistSession() { saveJson(LS_SESSION, X.session); }
   function clearPersistedSession() { try { localStorage.removeItem(LS_SESSION); } catch (e) {} }
 
@@ -606,6 +614,7 @@
     s.interrupted = false;
     s.answers[q.id] = { selected: selectedId, isCorrect, lowConfidence: !!opts.lowConfidence };
     persistSession();
+    awardXpForAnswer(isCorrect);
 
     if (s.revealMode === "deferred") { advanceIndex(); return; }
 
