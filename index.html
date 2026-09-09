@@ -157,6 +157,61 @@
     margin-bottom: 22px;
   }
 
+  /* ---------- level card ---------- */
+  .level-card {
+    background: linear-gradient(135deg, var(--indigo), #4a5f94);
+    border-radius: 18px;
+    padding: 16px 18px;
+    color: #fff;
+    margin-bottom: 18px;
+    box-shadow: 0 4px 14px rgba(44,62,102,0.25);
+  }
+  .level-card .row {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  .level-card .lv-wrap { display: flex; align-items: baseline; gap: 8px; }
+  .level-card .lv { font-size: 22px; font-weight: 700; display: inline-block; }
+  .level-card .streak { font-size: 12px; opacity: 0.9; }
+  .level-card .xp-num { font-size: 12px; opacity: 0.85; text-align: right; }
+  .level-bar-track {
+    height: 10px;
+    background: rgba(255,255,255,0.25);
+    border-radius: 999px;
+    overflow: hidden;
+  }
+  .level-bar-fill {
+    height: 100%;
+    background: #fff;
+    border-radius: 999px;
+    transition: width 0.7s cubic-bezier(.2,.9,.3,1);
+  }
+  .level-card.leveling .lv { animation: levelPulse 0.9s ease; }
+  @keyframes levelPulse {
+    0% { transform: scale(1); }
+    35% { transform: scale(1.4); text-shadow: 0 0 14px rgba(255,255,255,0.9); }
+    100% { transform: scale(1); }
+  }
+  .level-up-badge {
+    display: inline-block;
+    font-size: 11px;
+    font-weight: 700;
+    background: var(--gold);
+    color: #fff;
+    padding: 2px 9px;
+    border-radius: 999px;
+    opacity: 0;
+    animation: levelBadgeIn 2.4s ease forwards;
+  }
+  @keyframes levelBadgeIn {
+    0% { opacity: 0; transform: translateY(4px) scale(0.9); }
+    15% { opacity: 1; transform: translateY(0) scale(1); }
+    80% { opacity: 1; }
+    100% { opacity: 0; }
+  }
+
   /* ---------- home ---------- */
   .section-title {
     font-size: 15px;
@@ -232,6 +287,15 @@
     background: none; border: none; color: var(--ink-soft); font-size: 14px; cursor: pointer; padding: 4px;
   }
   .deck-pos { font-size: 13px; color: var(--ink-soft); font-weight: 600; }
+  .mini-lv {
+    display: flex; align-items: center; gap: 6px;
+    font-size: 11px; font-weight: 700; color: var(--indigo);
+  }
+  .mini-lv .mini-bar {
+    width: 46px; height: 6px; background: var(--indigo-soft); border-radius: 999px; overflow: hidden;
+  }
+  .mini-lv .mini-bar > div { height: 100%; background: var(--indigo); transition: width 0.5s ease; }
+  .mini-lv.leveling { animation: levelPulse 0.9s ease; }
 
   .flashcard-wrap {
     perspective: 1200px;
@@ -561,6 +625,8 @@
     restoreText: "",
     syncCode: null,
     syncStatus: "idle",  // idle | ok | err
+    _leveledUp: false,
+    _levelUpTimer: null,
   };
 
   // ---------------------------------------------------------------
@@ -687,6 +753,18 @@
     return d.getFullYear() + "-" + (d.getMonth()+1) + "-" + d.getDate();
   }
 
+  // レベルは三角数カーブ（レベルNに到達するには 25*(N-1)*N の累計XPが必要）。
+  // 後半のレベルほど必要XPが増え、序盤はすぐレベルが上がってやる気を出しやすくする。
+  function levelInfo(xp) {
+    let level = 1;
+    while (25 * level * (level + 1) <= xp) level++;
+    const floorXp = 25 * (level - 1) * level;
+    const ceilXp = 25 * level * (level + 1);
+    const into = xp - floorXp;
+    const span = ceilXp - floorXp;
+    return { level, into, span, pct: span > 0 ? Math.min(100, Math.round((into / span) * 100)) : 0 };
+  }
+
   function persistLocal() {
     try {
       localStorage.setItem("hsk2-progress", JSON.stringify({
@@ -795,12 +873,22 @@
     render();
   }
 
+  function gainXp(amount) {
+    const before = levelInfo(state.xp).level;
+    state.xp += amount;
+    const after = levelInfo(state.xp).level;
+    if (after > before) {
+      state._leveledUp = true;
+      clearTimeout(state._levelUpTimer);
+      state._levelUpTimer = setTimeout(() => { state._leveledUp = false; render(); }, 2400);
+    }
+  }
+
   function rateCard(gotIt) {
     const card = state.deck[state.idx];
     if (gotIt) {
-      if (!state.known[card.h]) { state.xp += 10; }
+      if (!state.known[card.h]) { gainXp(10); }
       state.known[card.h] = true;
-      showToast("+10 XP ✨");
     } else {
       delete state.known[card.h];
     }
@@ -823,7 +911,7 @@
     const correct = opt.h === state.quiz.questions[state.quiz.idx].q.h;
     if (correct) {
       state.quiz.score += 1;
-      state.xp += 15;
+      gainXp(15);
       if (!state.known[opt.h]) state.known[opt.h] = true;
     }
     saveProgress();
@@ -861,9 +949,18 @@
     return div.firstElementChild;
   }
 
+  function miniLevelHtml() {
+    const lvl = levelInfo(state.xp);
+    return `<div class="mini-lv${state._leveledUp ? " leveling" : ""}">
+      Lv.${lvl.level}
+      <div class="mini-bar"><div style="width:${lvl.pct}%"></div></div>
+    </div>`;
+  }
+
   function renderHome() {
     const totalProg = categoryProgress("すべて");
     const pct = Math.round((totalProg.known / totalProg.total) * 100);
+    const lvl = levelInfo(state.xp);
 
     const catRows = CATEGORIES.map(cat => {
       const prog = categoryProgress(cat);
@@ -885,11 +982,22 @@
             <span class="mark">汉语</span>
             <span class="sub">HSK2 集中学習</span>
           </div>
-          <div class="streak-pill">🔥 ${state.streak}日</div>
         </div>
 
         ${state.saveStatus === "err" ? `<div class="save-status err">⚠️ 自動保存は使えません。下の「進捗コード」で手動バックアップしてください</div>` : ""}
         ${state.saveStatus === "ok" ? `<div class="save-status ok">✓ この端末に保存されています</div>` : ""}
+
+        <div class="level-card${state._leveledUp ? " leveling" : ""}">
+          <div class="row">
+            <div class="lv-wrap">
+              <span class="lv">Lv.${lvl.level}</span>
+              <span class="streak">🔥 ${state.streak}日連続</span>
+              ${state._leveledUp ? `<span class="level-up-badge">LEVEL UP!</span>` : ""}
+            </div>
+            <div class="xp-num">${lvl.into} / ${lvl.span} XP<br>次のレベルまで ${lvl.span - lvl.into} XP</div>
+          </div>
+          <div class="level-bar-track"><div class="level-bar-fill" style="width:${lvl.pct}%"></div></div>
+        </div>
 
         <div class="backup-panel">
           <div class="bp-title">🔗 端末間同期</div>
@@ -934,7 +1042,7 @@
 
         <div class="progress-fill-wrap">
           <div class="progress-track"><div class="progress-fill" style="width:${pct}%"></div></div>
-          <div class="progress-label">全体の習得率 ${pct}%（${totalProg.known}/${totalProg.total}語） ・ XP ${state.xp}</div>
+          <div class="progress-label">全体の習得率 ${pct}%（${totalProg.known}/${totalProg.total}語）</div>
         </div>
 
         <div class="section-title">学習モードを選ぶ</div>
@@ -1021,6 +1129,7 @@
       <div>
         <div class="study-header">
           <button class="back-link" id="back">← 戻る</button>
+          ${miniLevelHtml()}
           <div class="deck-pos">${state.idx+1} / ${state.deck.length}</div>
         </div>
         <div class="progress-track" style="margin-bottom:20px;">
@@ -1069,6 +1178,7 @@
       <div>
         <div class="study-header">
           <button class="back-link" id="back">← 戻る</button>
+          ${miniLevelHtml()}
           <div class="deck-pos">${idx+1} / ${questions.length}</div>
         </div>
         <div class="quiz-progress-row">
